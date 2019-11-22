@@ -1,0 +1,488 @@
+@viewport {
+    width: device-width ;
+    zoom: 1.0 ;
+} 
+
+.body {
+    background: #141E30;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin-left: 40px;
+}
+
+.start {
+    margin-top: 50px;
+}
+
+.name {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+    margin-left: -3px;
+}
+
+.firstp {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: -20px;
+    margin-bottom: 40px;
+}
+
+.insideheader {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 45px;
+    margin-top: 120px;
+    margin-bottom: 50px;
+    position: relative;
+    top: 10px;
+}
+
+
+.project {
+    margin-bottom: 50px;
+    margin-right: 40px;
+    max-width: 370px;
+    min-width: 370px;
+    height: 300px;
+    flex-direction: column;
+    background: #141E30;
+}
+
+.projectname {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    text-decoration: none;
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+.projectexp {
+    color: white;
+    opacity: 0.6;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing:  0.1mm;
+    margin-top: -10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.detailbutton {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    position: relative;
+    top: 20px;
+    margin-left: 20px;
+    padding: 10px 10px 10px 10px;
+    background: #233961;
+    text-decoration: none;
+}
+
+.projectcards {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+}
+
+.skill {
+    margin-bottom: 50px;
+    margin-right: 40px;
+    max-width: 300px;
+    min-width: 300px;
+    height: 150px;
+    background: #141E30;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.skillname {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+.school {
+    margin-bottom: 50px;
+    margin-right: 40px;
+    max-width: 350px;
+    min-width: 350px;
+    height: 280px;
+    flex-direction: column;
+    background: #141E30;
+}
+
+.schoolname {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-right: 20px;
+    padding-left: 20px;
+}
+
+.schoolplight {
+    color: white;
+    opacity: 0.6;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing:  0.1mm;
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.contact {
+    margin-bottom: 50px;
+    margin-right: 40px;
+    max-width: 330px;
+    min-width: 330px;
+    height: 120px;
+    background: #141E30;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: visible;
+}
+
+
+.contactname {
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.contactlongname {
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.contacticon {
+    color: #dddddd;
+    margin-top: 11px;
+}
+
+.footertext{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+.footer {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.scrollprojects {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    opacity: 0.7;
+    display: none;
+    position: relative;
+    bottom: 20px;
+}
+
+.scrollskills {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    opacity: 0.7;
+    display: none;
+    position: relative;
+    bottom: 20px;
+}
+
+.scrolleducation {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    opacity: 0.7;
+    display: none;
+    position: relative;
+    bottom: 20px;
+}
+
+.scrollcontact {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    opacity: 0.7;
+    display: none;
+    position: relative;
+    bottom: 20px;
+}
+
+@media screen and (max-width:1300px) {
+    .name{
+        font-size: 50px;
+    }
+
+    .firstp {
+        font-size: 20px;
+    }
+    
+    .insideheader {
+        font-size: 35px;
+    }
+    
+    
+    .project {
+        min-width: 310px;
+        height: 250px;
+    }
+    
+    .projectname {
+        font-size: 25px;
+    }
+    
+    .projectexp {
+        font-size: 17px;
+    }
+    
+    .detailbutton {
+        font-size: 17px;
+    }
+    
+    .skill {
+        min-width: 280px;
+        height: 130px;
+    }
+    
+    
+    .skillname {
+        font-size: 25px;
+        margin-right: 10px;
+    }
+    
+    .school {
+        min-width: 330px;
+        height: 260px;
+    }
+    
+    .schoolname {
+        font-size: 25px;
+    }
+    
+    .schoolplight {
+        font-size: 17px;
+    }
+    
+    .contact {
+        min-width: 320px;
+        height: 110px;
+    }
+    
+    .contacticon {
+        color: #dddddd;
+        margin-top: 11px;
+    }
+    
+    .footertext {
+        font-size: 17px;
+    }
+    
+    .footer {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:850px) {
+    .skill {
+        min-width: 260px;
+        height: 100px;
+    }
+    
+    .skillname {
+        font-size: 25px;
+    }
+    
+    .school {
+        min-width: 300px;
+        height: 230px;
+    }
+    
+    .schoolname {
+        font-size: 20px;
+    }
+    
+    .schoolplight {
+        font-size: 15px;
+    }
+    
+    .contact {
+        min-width: 300px;
+        height: 90px;
+    }
+
+    .contactname {
+        font-size: 20px;
+    }
+    
+    .contacticon {
+        color: #dddddd;
+        margin-top: 11px;
+    }
+    
+    .footertext {
+        font-size: 17px;
+    }
+    
+    .footer {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    .body {
+        margin-left: 30px;
+    }
+
+    .name{
+        font-size: 40px;
+    }
+
+    .firstp {
+        font-size: 20px;
+    }
+    
+    .insideheader {
+        font-size: 35px;
+    }
+    
+    
+    .project {
+        min-width: 310px;
+        height: 250px;
+    }
+    
+    .projectname {
+        font-size: 25px;
+    }
+    
+    .projectexp {
+        font-size: 17px;
+    }
+    
+    .detailbutton {
+        font-size: 17px;
+    }
+    
+    .skill {
+        min-width: 280px;
+        height: 130px;
+    }
+    
+    
+    .skillname {
+        font-size: 25px;
+        margin-right: 10px;
+    }
+    
+    .school {
+        min-width: 330px;
+        height: 260px;
+    }
+    
+    .schoolname {
+        font-size: 25px;
+    }
+    
+    .schoolplight {
+        font-size: 17px;
+    }
+    
+    .contact {
+        min-width: 320px;
+        height: 110px;
+    }
+    
+    .contacticon {
+        color: #dddddd;
+        margin-top: 11px;
+    }
+    
+    .footertext {
+        font-size: 17px;
+    }
+    
+    .footer {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .body {
+        margin-left: 20px;
+    }
+
+    .name {
+        font-size: 37px;
+        font-weight: normal;
+        margin-bottom: 40px;
+    }
+
+    .firstp {
+        font-size: 17px;
+        font-weight: normal;
+    }
+
+    .insideheader {
+        font-weight: normal;
+    }
+
+    .projectexp {
+        font-weight: normal;
+    }
+
+    .schoolplight {
+        font-weight: normal;
+    }
+}
+
+@media screen and (max-width:620px) {
+    .scrollprojects {
+        display: unset;
+    }
+}
+
+@media screen and (max-width:960px) {
+    .scrollskills {
+        display: unset;
+    }
+}
+
+@media screen and (max-width:1030px) {
+    .scrolleducation {
+        display: unset;
+    }
+}
+
+@media screen and (max-width:1850px) {
+    .scrollcontact {
+        display: unset;
+    }
+}
