@@ -147,22 +147,66 @@
             <a class="contactname" href="https://youtube.com/baranonenhavac%C4%B1l%C4%B1k">Baran Önen</a>
         </div> 
         
-        </div>
-    
-        </div>
-
-       
-
+    </div>
+    </div>
 </body>
+
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('/sw.js').then(function(registration) {
+      // Registration was successful
+      console.log('ServiceWorker registration successful with scope: ', registration.scope);
+    }, function(err) {
+      // registration failed :(
+      console.log('ServiceWorker registration failed: ', err);
+    });
+  });
+}
+
+  // Perform install steps
+  var CACHE_NAME = 'my-site-cache-v1';
+    var urlsToCache = [
+      '/',
+      '/styles/main.css',
+     '/script/main.js'
+    ];
+
+    self.addEventListener('install', function(event) {
+     // Perform install steps
+      event.waitUntil(
+        caches.open(CACHE_NAME)
+          .then(function(cache) {
+            console.log('Opened cache');
+           return cache.addAll(urlsToCache);
+         })
+     );
+    });
+
+    self.addEventListener('fetch', function(event) {
+  event.respondWith(
+    caches.match(event.request)
+      .then(function(response) {
+        // Cache hit - return response
+        if (response) {
+          return response;
+        }
+        return fetch(event.request);
+      }
+    )
+  );
+});
+
+
+</script>
 
 <footer>
 
-    <div class="footer">
+    <div id="footer" class="footer">
         <p class="footertext">© Copyright Baran Önen 2019</p>
         <a href="//www.dmca.com/Protection/Status.aspx?ID=12dec948-7f79-45f7-a59f-17818812f70a" title="DMCA.com Protection Status" class="dmca-badge"> <img src ="https://images.dmca.com/Badges/dmca-badge-w150-5x1-02.png?ID=12dec948-7f79-45f7-a59f-17818812f70a"  alt="DMCA.com Protection Status" /></a>  <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
     </div> 
     
-
 </footer>
 
 </html>
