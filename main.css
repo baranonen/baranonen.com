@@ -235,11 +235,6 @@
     bottom: 20px;
 }
 
-.footerimg {
-    height: 50px;
-    width: auto;
-}
-
 @media screen and (max-width:1300px) {
     .name{
         font-size: 50px;
