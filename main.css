@@ -91,7 +91,25 @@
 .projectcards {
     display: flex;
     flex-direction: row;
-    overflow-x: scroll;
+    overflow-x: hidden;
+}
+
+.skillcards {
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+}
+
+.schoolcards {
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+}
+
+.contactcards {
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
 }
 
 .skill {
@@ -463,9 +481,12 @@
     }
 }
 
-@media screen and (max-width:620px) {
+@media screen and (max-width:710px) {
     .scrollprojects {
         display: unset;
+    }
+    .projectcards {
+        overflow-x: scroll;
     }
 }
 
@@ -473,16 +494,25 @@
     .scrollskills {
         display: unset;
     }
+    .skillcards {
+        overflow-x: scroll;
+    }
 }
 
-@media screen and (max-width:1030px) {
+@media screen and (max-width:1120px) {
     .scrolleducation {
         display: unset;
+    }
+    .schoolcards {
+        overflow-x: scroll;
     }
 }
 
 @media screen and (max-width:1850px) {
     .scrollcontact {
         display: unset;
+    }
+    .contactcards {
+        overflow-x: scroll;
     }
 }
