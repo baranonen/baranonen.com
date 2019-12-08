@@ -281,7 +281,7 @@
     display: none;
     position: absolute;
     background: #141E30;
-    min-width: 120px;
+    min-width: 130px;
     right: 0;
     margin-right: 20px;
     z-index: 1;
@@ -289,7 +289,7 @@
   
   .dropdown-content a {
     color: white;
-    padding: 12px 0px 12px 18px;
+    padding: 12px 0px 12px 20px;
     text-decoration: none;
     display: block;
     font-family: 'Montserrat', sans-serif;
