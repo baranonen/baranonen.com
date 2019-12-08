@@ -510,7 +510,12 @@
 
     .dropbtn {
         margin-right: 0px;
+        margin-top: -5px;
     }     
+
+    .dropbtn:focus {
+        background-color: #141E30;
+    }
     
     .dropdown-content {
         margin-right: 0px;
