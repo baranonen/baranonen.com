@@ -2,30 +2,65 @@
 <!--© Copyright Baran Önen 2019-->
 
 <html lang="en">
-    <head>
-        <script src="https://kit.fontawesome.com/c857a23705.js"></script>
-        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> 
-        <link rel="stylesheet" type="text/css" href="main.css">
-        <meta charset="utf-8">
-        <title>Baran Önen</title>   
-        <link rel="alternate" hreflang="tr" href="https://www.baranonen.com/tr/" />
-        <meta name="description" content="My space on the Internet" />
-        <meta name="viewport" content="width=device-width, initial-scale=1"> 
-        <meta name="google-site-verification" content="N46x_8oHyYfeQCoyVwOWvYCDX5DTqHOT8wkriF3uiUc" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png?v=kPv7ek4OK4">
-        <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png?v=kPv7ek4OK4">
-        <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png?v=kPv7ek4OK4">
-        <link rel="manifest" href="/icons/site.webmanifest?v=kPv7ek4OK4">
-        <link rel="mask-icon" href="/icons/safari-pinned-tab.svg?v=kPv7ek4OK4" color="#141e30">
-        <link rel="shortcut icon" href="/icons/favicon.ico?v=kPv7ek4OK4">
-        <meta name="apple-mobile-web-app-title" content="Baran &Ouml;nen">
-        <meta name="application-name" content="Baran &Ouml;nen">
-        <meta name="msapplication-TileColor" content="#141e30">
-        <meta name="msapplication-config" content="/icons/browserconfig.xml?v=kPv7ek4OK4">
-        <meta name="theme-color" content="#141e30">
-    </head>
+
+<head>
+    <script src="https://kit.fontawesome.com/c857a23705.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <meta charset="utf-8">
+    <title>Baran Önen</title>
+    <link rel="alternate" hreflang="tr" href="https://www.baranonen.com/tr/" />
+    <meta name="description" content="My space on the Internet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification" content="N46x_8oHyYfeQCoyVwOWvYCDX5DTqHOT8wkriF3uiUc" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png?v=kPv7ek4OK4">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png?v=kPv7ek4OK4">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png?v=kPv7ek4OK4">
+    <link rel="manifest" href="/icons/site.webmanifest?v=kPv7ek4OK4">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg?v=kPv7ek4OK4" color="#141e30">
+    <link rel="shortcut icon" href="/icons/favicon.ico?v=kPv7ek4OK4">
+    <meta name="apple-mobile-web-app-title" content="Baran &Ouml;nen">
+    <meta name="application-name" content="Baran &Ouml;nen">
+    <meta name="msapplication-TileColor" content="#141e30">
+    <meta name="msapplication-config" content="/icons/browserconfig.xml?v=kPv7ek4OK4">
+    <meta name="theme-color" content="#141e30">
+</head>
 
 <body class="body">
+
+    <div style="display: flex; flex-direction: row; justify-content: space-between">
+
+        <div></div>
+
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">EN 
+            <i class="fa fa-caret-down"></i> </button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="./index.html">English</a>
+                <a href="./tr/index.html">Turkish</a>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+    </script>
 
     <div class="start">
         <h1 class="name">Baran Önen</h1>
@@ -46,18 +81,18 @@
         <h1 class="scrollprojects"><i class="fas fa-arrow-left"></i> Scroll left for more</h1>
 
         <div class="projectcards">
-        
-        <div class="project">
-           <h2 class="projectname">SSALConnect</h2>
-           <p class="projectexp">Open source companion app for Sakıp Sabancı Anadolu Lisesi located in Istanbul</p> 
-           <a class="detailbutton" href="https://github.com/baranonen/SSALConnect">View on GitHub</a>
-        </div>
 
-        <div class="project">
-           <h2 class="projectname">baranonen.com</h2>
-           <p class="projectexp">My personal website</p> 
-           <a class="detailbutton" href="https://github.com/baranonen/baranonen.com">View on GitHub</a>
-        </div>
+            <div class="project">
+                <h2 class="projectname">SSALConnect</h2>
+                <p class="projectexp">Open source companion app for Sakıp Sabancı Anadolu Lisesi located in Istanbul</p>
+                <a class="detailbutton" href="https://github.com/baranonen/SSALConnect">View on GitHub</a>
+            </div>
+
+            <div class="project">
+                <h2 class="projectname">baranonen.com</h2>
+                <p class="projectexp">My personal website</p>
+                <a class="detailbutton" href="https://github.com/baranonen/baranonen.com">View on GitHub</a>
+            </div>
         </div>
     </div>
 
@@ -67,21 +102,21 @@
         <h1 class="scrollskills"><i class="fas fa-arrow-left"></i> Scroll left for more</h1>
 
         <div class="skillcards">
-        <div class="skill">
-            <h1 class="skillname">HTML</h1>
-            <i style="color: #da5525; margin-left: 10px; margin-right: 10px;" class="fab fa-html5 fa-4x" aria-hidden="true"></i>
-        </div>
+            <div class="skill">
+                <h1 class="skillname">HTML</h1>
+                <i style="color: #da5525; margin-left: 10px; margin-right: 10px;" class="fab fa-html5 fa-4x" aria-hidden="true"></i>
+            </div>
 
-        <div class="skill">
-            <h1 class="skillname">Git</h1>
-            <i style="color: #dddddd; margin-left: 10px; margin-right: 10px;" class="fab fa-github fa-4x" aria-hidden="true"></i> 
-        </div>
+            <div class="skill">
+                <h1 class="skillname">Git</h1>
+                <i style="color: #dddddd; margin-left: 10px; margin-right: 10px;" class="fab fa-github fa-4x" aria-hidden="true"></i>
+            </div>
 
-        <div class="skill">
-            <h1 class="skillname">React Native</h1>
-            <i style="color: #61dafb; margin-left: 10px; margin-right: 10px;" class="fab fa-react fa-4x" aria-hidden="true"></i>
+            <div class="skill">
+                <h1 class="skillname">React Native</h1>
+                <i style="color: #61dafb; margin-left: 10px; margin-right: 10px;" class="fab fa-react fa-4x" aria-hidden="true"></i>
+            </div>
         </div>
-    </div>
     </div>
 
     <div class="projects">
@@ -91,28 +126,28 @@
 
         <div class="schoolcards">
 
-        <div class="school">
-            <h1 class="schoolname">Özel Evrim Okulları</h1>
-            <p class="schoolplight">Primary School-Secondary School</p>
-            <p class="schoolplight">2009-2017</p>
-            <a class="detailbutton" href="http://www.evrim.k12.tr/tr/">Visit website</a>
-        </div>
+            <div class="school">
+                <h1 class="schoolname">Özel Evrim Okulları</h1>
+                <p class="schoolplight">Primary School-Secondary School</p>
+                <p class="schoolplight">2009-2017</p>
+                <a class="detailbutton" href="http://www.evrim.k12.tr/tr/">Visit website</a>
+            </div>
 
-        <div class="school">
-            <h1 class="schoolname">Sevinç Koleji</h1>
-            <p class="schoolplight">Secondary School</p>
-            <p class="schoolplight">2017-2018</p>
-            <a class="detailbutton" href="https://www.sevinc.k12.tr/">Visit website</a>
-        </div>
+            <div class="school">
+                <h1 class="schoolname">Sevinç Koleji</h1>
+                <p class="schoolplight">Secondary School</p>
+                <p class="schoolplight">2017-2018</p>
+                <a class="detailbutton" href="https://www.sevinc.k12.tr/">Visit website</a>
+            </div>
 
-        <div class="school">
-            <h1 class="schoolname">Sakıp Sabancı Anadolu Lisesi</h1>
-            <p class="schoolplight">High School</p>
-            <p class="schoolplight">2018-current</p>
-            <a class="detailbutton" href="http://sabancilisesi.meb.k12.tr/">Visit website</a>
-        </div>
+            <div class="school">
+                <h1 class="schoolname">Sakıp Sabancı Anadolu Lisesi</h1>
+                <p class="schoolplight">High School</p>
+                <p class="schoolplight">2018-current</p>
+                <a class="detailbutton" href="http://sabancilisesi.meb.k12.tr/">Visit website</a>
+            </div>
 
-    </div>
+        </div>
 
     </div>
 
@@ -120,35 +155,35 @@
         <h1 class="insideheader">Contact</h1>
 
         <h1 class="scrollcontact"><i class="fas fa-arrow-left"></i> Scroll left for more</h1>
-    
+
         <div class="contactcards">
-          
-        <div class="contact">
-            <p class="contacticon"> <i class="fas fa-at fa-3x" aria-hidden="true"></i> </p>
-            <a class="contactlongname" href="mailto:baran@baranonen.com">baran@baranonen.com</a>
-        </div>    
 
-        <div class="contact">
-            <p class="contacticon"> <i class="fab fa-github fa-3x" aria-hidden="true"></i> </p>
-            <a class="contactname" href="https://github.com/baranonen">baranonen</a>
-        </div>   
+            <div class="contact">
+                <p class="contacticon"> <i class="fas fa-at fa-3x" aria-hidden="true"></i> </p>
+                <a class="contactlongname" href="mailto:baran@baranonen.com">baran@baranonen.com</a>
+            </div>
 
-        <div class="contact">
-            <p class="contacticon"> <i class="fab fa-instagram fa-3x" aria-hidden="true"></i> </p>            
-            <a class="contactname" href="https://instagram.com/baranonenn">@baranonenn</a>
-        </div>   
+            <div class="contact">
+                <p class="contacticon"> <i class="fab fa-github fa-3x" aria-hidden="true"></i> </p>
+                <a class="contactname" href="https://github.com/baranonen">baranonen</a>
+            </div>
 
-        <div class="contact">
-            <p class="contacticon"> <i class="fab fa-twitter fa-3x" aria-hidden="true"></i> </p>
-            <a class="contactname" href="https://twitter.com/baranonenn">@baranonenn</a>
-        </div>  
+            <div class="contact">
+                <p class="contacticon"> <i class="fab fa-instagram fa-3x" aria-hidden="true"></i> </p>
+                <a class="contactname" href="https://instagram.com/baranonenn">@baranonenn</a>
+            </div>
 
-        <div class="contact">
-            <p class="contacticon"> <i class="fab fa-youtube fa-3x" aria-hidden="true"></i> </p>
-            <a class="contactname" href="https://youtube.com/baranonenhavac%C4%B1l%C4%B1k">Baran Önen</a>
-        </div> 
-        
-    </div>
+            <div class="contact">
+                <p class="contacticon"> <i class="fab fa-twitter fa-3x" aria-hidden="true"></i> </p>
+                <a class="contactname" href="https://twitter.com/baranonenn">@baranonenn</a>
+            </div>
+
+            <div class="contact">
+                <p class="contacticon"> <i class="fab fa-youtube fa-3x" aria-hidden="true"></i> </p>
+                <a class="contactname" href="https://youtube.com/baranonenhavac%C4%B1l%C4%B1k">Baran Önen</a>
+            </div>
+
+        </div>
     </div>
 </body>
 
@@ -156,9 +191,11 @@
 
     <div id="footer" class="footer">
         <p class="footertext">© Copyright Baran Önen 2019</p>
-        <a href="//www.dmca.com/Protection/Status.aspx?ID=12dec948-7f79-45f7-a59f-17818812f70a" title="DMCA.com Protection Status" class="dmca-badge"> <img src ="https://images.dmca.com/Badges/dmca-badge-w150-5x1-02.png?ID=12dec948-7f79-45f7-a59f-17818812f70a"  alt="DMCA.com Protection Status" /></a>  <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
-    </div> 
-    
+        <a href="//www.dmca.com/Protection/Status.aspx?ID=12dec948-7f79-45f7-a59f-17818812f70a" title="DMCA.com Protection Status" class="dmca-badge"> <img src="https://images.dmca.com/Badges/dmca-badge-w150-5x1-02.png?ID=12dec948-7f79-45f7-a59f-17818812f70a" alt="DMCA.com Protection Status" /></a>
+        <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js">
+        </script>
+    </div>
+
 </footer>
 
 </html>
