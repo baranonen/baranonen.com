@@ -3,10 +3,14 @@
     zoom: 1.0 ;
 } 
 
+:root {
+    --card-color: #17243f;
+}
+
 .body {
-    background: #141E30;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #1a2c50;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #325175, #1a2c50);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #325175, #1a2c50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     margin-left: 40px;
 }
 
@@ -50,7 +54,7 @@
     min-width: 370px;
     height: 300px;
     flex-direction: column;
-    background: #141E30;
+    background: var(--card-color);
 }
 
 .projectname {
@@ -118,7 +122,7 @@
     max-width: 300px;
     min-width: 300px;
     height: 150px;
-    background: #141E30;
+    background: var(--card-color);
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -141,7 +145,7 @@
     min-width: 350px;
     height: 295px;
     flex-direction: column;
-    background: #141E30;
+    background: var(--card-color);
 }
 
 .schoolname {
@@ -173,7 +177,7 @@
     max-width: 330px;
     min-width: 330px;
     height: 120px;
-    background: #141E30;
+    background: var(--card-color);
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -265,11 +269,11 @@
   }
   
   .dropbtn:hover {
-    background-color: #141E30;
+    background-color: var(--card-color);
   }
 
   .dropbtn:focus {
-    background-color: #141E30;
+    background-color: var(--card-color);
   }
   
   .dropdown {
@@ -282,7 +286,7 @@
     flex-direction: column;
     justify-content: center;
     position: absolute;
-    background: #141E30;
+    background: var(--card-color);
     min-width: 120px;
     right: 0;
     margin-right: 20px;
@@ -509,7 +513,7 @@
     }     
 
     .dropbtn:focus {
-        background-color: #141E30;
+        background-color: var(--card-color);
     }
 
     .dropbtn:hover{
@@ -600,3 +604,14 @@
   display: none;
 }
 
+@media (prefers-color-scheme: dark) {
+    .body {
+        background: #141E30;
+        background: -webkit-linear-gradient(to left, #243B55, #141E30);
+        background: linear-gradient(to left, #243B55, #141E30);
+    }
+
+    :root {
+        --card-color: #141E30;
+    }
+}
