@@ -3,29 +3,33 @@
     zoom: 1.0 ;
 } 
 
+:root {
+    --card-color: #17243f;
+}
+
 .body {
-    background: #141E30;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #1a2c50;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #325175, #1a2c50);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #325175, #1a2c50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     margin-left: 40px;
 }
 
 .start {
-    margin-top: 50px;
+    margin-top: -40px;
 }
 
 .name {
     color: white;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
     font-size: 60px;
     margin-left: -3px;
 }
 
 .firstp {
     color: white;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
     font-size: 30px;
     margin-top: -20px;
     margin-bottom: 40px;
@@ -33,8 +37,8 @@
 
 .insideheader {
     color: white;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
     font-size: 45px;
     margin-top: 120px;
     margin-bottom: 50px;
@@ -50,13 +54,13 @@
     min-width: 370px;
     height: 300px;
     flex-direction: column;
-    background: #141E30;
+    background: var(--card-color);
 }
 
 .projectname {
     color: white;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
     font-size: 35px;
     text-decoration: none;
     margin-top: 20px;
@@ -66,9 +70,10 @@
 .projectexp {
     color: white;
     opacity: 0.6;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
     font-size: 20px;
+    letter-spacing:  0.1mm;
     margin-top: -10px;
     padding-left: 20px;
     padding-right: 20px;
@@ -76,8 +81,8 @@
 
 .detailbutton {
     color: white;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
     font-size: 20px;
     position: relative;
     top: 20px;
@@ -90,7 +95,25 @@
 .projectcards {
     display: flex;
     flex-direction: row;
-    overflow-x: scroll;
+    overflow-x: hidden;
+}
+
+.skillcards {
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+}
+
+.schoolcards {
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+}
+
+.contactcards {
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
 }
 
 .skill {
@@ -99,7 +122,7 @@
     max-width: 300px;
     min-width: 300px;
     height: 150px;
-    background: #141E30;
+    background: var(--card-color);
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -108,8 +131,8 @@
 
 .skillname {
     color: white;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
     font-size: 35px;
     margin-top: 20px;
     padding-left: 20px;
@@ -120,15 +143,15 @@
     margin-right: 40px;
     max-width: 350px;
     min-width: 350px;
-    height: 320px;
+    height: 295px;
     flex-direction: column;
-    background: #141E30;
+    background: var(--card-color);
 }
 
 .schoolname {
     color: white;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
     text-decoration: none;
     font-size: 30px;
     margin-top: 20px;
@@ -139,9 +162,10 @@
 .schoolplight {
     color: white;
     opacity: 0.6;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
     font-size: 20px;
+    letter-spacing:  0.1mm;
     margin-top: 10px;
     padding-left: 20px;
     padding-right: 20px;
@@ -153,7 +177,7 @@
     max-width: 330px;
     min-width: 330px;
     height: 120px;
-    background: #141E30;
+    background: var(--card-color);
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -164,16 +188,16 @@
 .contactname {
     color: white;
     text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
     font-size: 20px;
 }
 
 .contactlongname {
     color: white;
     text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
     font-size: 15px;
 }
 
@@ -184,7 +208,7 @@
 
 .footertext{
     color: white;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 20px;
 }
 
@@ -195,7 +219,7 @@
 
 .scrollprojects {
     color: white;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     opacity: 0.7;
     display: none;
@@ -205,7 +229,7 @@
 
 .scrollskills {
     color: white;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     opacity: 0.7;
     display: none;
@@ -215,7 +239,7 @@
 
 .scrolleducation {
     color: white;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     opacity: 0.7;
     display: none;
@@ -225,13 +249,66 @@
 
 .scrollcontact {
     color: white;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     opacity: 0.7;
     display: none;
     position: relative;
     bottom: 20px;
 }
+
+ .dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 16px;
+    margin-right: 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .dropbtn:hover {
+    background-color: var(--card-color);
+  }
+
+  .dropbtn:focus {
+    background-color: var(--card-color);
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    background: var(--card-color);
+    min-width: 120px;
+    right: 0;
+    margin-right: 20px;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    text-align: center; 
+    color: white;
+    padding: 12px 0px 12px 0px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    justify-self: flex-end;
+  }
+  
+  .dropdown-content a:hover {background: rgb(12, 20, 36);}
+  
+  .show {display:flex;} 
+
+
+
 
 @media screen and (max-width:1300px) {
     .name{
@@ -430,6 +507,23 @@
     .footer {
         margin-top: 20px;
     }
+
+    .dropbtn {
+        margin-right: 0px;
+    }     
+
+    .dropbtn:focus {
+        background-color: var(--card-color);
+    }
+
+    .dropbtn:hover{
+        background-color: transparent;
+    }
+    
+    .dropdown-content {
+        margin-right: 0px;
+        margin-top: -5px;
+    }
 }
 
 @media screen and (max-width:500px) {
@@ -461,11 +555,22 @@
     .schoolplight {
         font-weight: normal;
     }
+
+    .dropbtn {
+        margin-right: -10px;
+    }     
+    
+    .dropdown-content {
+        margin-right: -10px;
+    }
 }
 
-@media screen and (max-width:620px) {
+@media screen and (max-width:710px) {
     .scrollprojects {
         display: unset;
+    }
+    .projectcards {
+        overflow-x: scroll;
     }
 }
 
@@ -473,16 +578,42 @@
     .scrollskills {
         display: unset;
     }
+    .skillcards {
+        overflow-x: scroll;
+    }
 }
 
-@media screen and (max-width:1030px) {
+@media screen and (max-width:1120px) {
     .scrolleducation {
         display: unset;
+    }
+    .schoolcards {
+        overflow-x: scroll;
     }
 }
 
 @media screen and (max-width:1850px) {
     .scrollcontact {
         display: unset;
+    }
+    .contactcards {
+        overflow-x: scroll;
+    }
+}
+
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+    .body {
+        background: #141E30;
+        background: -webkit-linear-gradient(to left, #243B55, #141E30);
+        background: linear-gradient(to left, #243B55, #141E30);
+    }
+
+    :root {
+        --card-color: #141E30;
     }
 }
