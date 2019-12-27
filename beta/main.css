@@ -1,0 +1,615 @@
+@viewport {
+    width: device-width ;
+    zoom: 1.0 ;
+} 
+
+:root {
+    --card-color: #ffffff;
+    --text-color: black;
+    --card-button: #cfcfcf;
+    --black-white-icon: black;
+}
+
+.body {
+    background: #cfcfcf;
+    margin-left: 40px;
+}
+
+.start {
+    margin-top: -40px;
+}
+
+.name {
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 60px;
+    margin-left: -3px;
+}
+
+.firstp {
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    margin-top: -20px;
+    margin-bottom: 40px;
+}
+
+.insideheader {
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 45px;
+    margin-top: 120px;
+    margin-bottom: 50px;
+    position: relative;
+    top: 10px;
+}
+
+
+.project {
+    margin-bottom: 50px;
+    margin-right: 40px;
+    max-width: 370px;
+    min-width: 370px;
+    height: 300px;
+    flex-direction: column;
+    background: var(--card-color);
+}
+
+.projectname {
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 35px;
+    text-decoration: none;
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+.projectexp {
+    color: var(--text-color);
+    opacity: 0.6;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing:  0.1mm;
+    margin-top: -10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.detailbutton {
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    position: relative;
+    top: 20px;
+    margin-left: 20px;
+    padding: 10px 10px 10px 10px;
+    background: var(--card-button);
+    text-decoration: none;
+}
+
+.projectcards {
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+}
+
+.skillcards {
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+}
+
+.schoolcards {
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+}
+
+.contactcards {
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+}
+
+.skill {
+    margin-bottom: 50px;
+    margin-right: 40px;
+    max-width: 300px;
+    min-width: 300px;
+    height: 150px;
+    background: var(--card-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.skillname {
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 35px;
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+.school {
+    margin-bottom: 50px;
+    margin-right: 40px;
+    max-width: 350px;
+    min-width: 350px;
+    height: 320px;
+    flex-direction: column;
+    background: var(--card-color);
+}
+
+.schoolname {
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-right: 20px;
+    padding-left: 20px;
+}
+
+.schoolplight {
+    color: var(--text-color);
+    opacity: 0.6;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing:  0.1mm;
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.contact {
+    margin-bottom: 50px;
+    margin-right: 40px;
+    max-width: 330px;
+    min-width: 330px;
+    height: 120px;
+    background: var(--card-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: visible;
+}
+
+
+.contactname {
+    color: var(--text-color);
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.contactlongname {
+    color: var(--text-color);
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.contacticon {
+    color: #dddddd;
+    margin-top: 11px;
+}
+
+.footertext{
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+.footer {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.scrollprojects {
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    opacity: 0.7;
+    display: none;
+    position: relative;
+    bottom: 20px;
+}
+
+.scrollskills {
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    opacity: 0.7;
+    display: none;
+    position: relative;
+    bottom: 20px;
+}
+
+.scrolleducation {
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    opacity: 0.7;
+    display: none;
+    position: relative;
+    bottom: 20px;
+}
+
+.scrollcontact {
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    opacity: 0.7;
+    display: none;
+    position: relative;
+    bottom: 20px;
+}
+
+ .dropbtn {
+    background-color: transparent;
+    color: var(--text-color);
+    padding: 16px;
+    margin-right: 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    background: var(--card-color);
+    min-width: 120px;
+    right: 0;
+    margin-right: 20px;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    text-align: center; 
+    color: var(--text-color);
+    padding: 12px 0px 12px 0px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    justify-self: flex-end;
+  }
+  
+  .dropdown-content a:hover {var(--text-color);}
+  
+  .show {display:flex;} 
+
+  .blackwhiteicon {
+      color: var(--black-white-icon);
+  }
+
+
+@media screen and (max-width:1300px) {
+    .name{
+        font-size: 50px;
+    }
+
+    .firstp {
+        font-size: 20px;
+    }
+    
+    .insideheader {
+        font-size: 35px;
+    }
+    
+    
+    .project {
+        min-width: 310px;
+        height: 250px;
+    }
+    
+    .projectname {
+        font-size: 25px;
+    }
+    
+    .projectexp {
+        font-size: 17px;
+    }
+    
+    .detailbutton {
+        font-size: 17px;
+    }
+    
+    .skill {
+        min-width: 280px;
+        height: 130px;
+    }
+    
+    
+    .skillname {
+        font-size: 25px;
+        margin-right: 10px;
+    }
+    
+    .school {
+        min-width: 330px;
+        height: 260px;
+    }
+    
+    .schoolname {
+        font-size: 25px;
+    }
+    
+    .schoolplight {
+        font-size: 17px;
+    }
+    
+    .contact {
+        min-width: 320px;
+        height: 110px;
+    }
+    
+    .contacticon {
+        color: #dddddd;
+        margin-top: 11px;
+    }
+    
+    .footertext {
+        font-size: 17px;
+    }
+    
+    .footer {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:850px) {
+    .skill {
+        min-width: 260px;
+        height: 100px;
+    }
+    
+    .skillname {
+        font-size: 25px;
+    }
+    
+    .school {
+        min-width: 300px;
+        height: 230px;
+    }
+    
+    .schoolname {
+        font-size: 20px;
+    }
+    
+    .schoolplight {
+        font-size: 15px;
+    }
+    
+    .contact {
+        min-width: 300px;
+        height: 90px;
+    }
+
+    .contactname {
+        font-size: 20px;
+    }
+    
+    .contacticon {
+        color: #dddddd;
+        margin-top: 11px;
+    }
+    
+    .footertext {
+        font-size: 17px;
+    }
+    
+    .footer {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    .body {
+        margin-left: 30px;
+    }
+
+    .name{
+        font-size: 40px;
+    }
+
+    .firstp {
+        font-size: 20px;
+    }
+    
+    .insideheader {
+        font-size: 35px;
+    }
+    
+    
+    .project {
+        min-width: 310px;
+        height: 250px;
+    }
+    
+    .projectname {
+        font-size: 25px;
+    }
+    
+    .projectexp {
+        font-size: 17px;
+    }
+    
+    .detailbutton {
+        font-size: 17px;
+    }
+    
+    .skill {
+        min-width: 280px;
+        height: 130px;
+    }
+    
+    
+    .skillname {
+        font-size: 25px;
+        margin-right: 10px;
+    }
+    
+    .school {
+        min-width: 330px;
+        height: 260px;
+    }
+    
+    .schoolname {
+        font-size: 25px;
+    }
+    
+    .schoolplight {
+        font-size: 17px;
+    }
+    
+    .contact {
+        min-width: 320px;
+        height: 110px;
+    }
+    
+    .contacticon {
+        color: #dddddd;
+        margin-top: 11px;
+    }
+    
+    .footertext {
+        font-size: 17px;
+    }
+    
+    .footer {
+        margin-top: 20px;
+    }
+
+    .dropbtn {
+        margin-right: 0px;
+    }     
+
+    .dropbtn:focus {
+        background-color: var(--card-color);
+    }
+
+    .dropbtn:hover{
+        background-color: transparent;
+    }
+    
+    .dropdown-content {
+        margin-right: 0px;
+        margin-top: -5px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .body {
+        margin-left: 20px;
+
+    }
+
+    .name {
+        font-size: 37px;
+        font-weight: normal;
+        margin-bottom: 40px;
+    }
+
+    .firstp {
+        font-size: 17px;
+        font-weight: normal;
+        margin-right: 30px;
+    }
+
+    .insideheader {
+        font-weight: normal;
+    }
+
+    .projectexp {
+        font-weight: normal;
+    }
+
+    .schoolplight {
+        font-weight: normal;
+    }
+
+    .dropbtn {
+        margin-right: -10px;
+    }     
+    
+    .dropdown-content {
+        margin-right: -10px;
+    }
+}
+
+@media screen and (max-width:710px) {
+    .scrollprojects {
+        display: unset;
+    }
+    .projectcards {
+        overflow-x: scroll;
+    }
+}
+
+@media screen and (max-width:960px) {
+    .scrollskills {
+        display: unset;
+    }
+    .skillcards {
+        overflow-x: scroll;
+    }
+}
+
+@media screen and (max-width:1120px) {
+    .scrolleducation {
+        display: unset;
+    }
+    .schoolcards {
+        overflow-x: scroll;
+    }
+}
+
+@media screen and (max-width:1850px) {
+    .scrollcontact {
+        display: unset;
+    }
+    .contactcards {
+        overflow-x: scroll;
+    }
+}
+
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+    .body {
+        background: black;
+    }
+
+    :root {
+        --card-color: #161616;
+        --text-color: white;
+        --card-button: black;
+        --black-white-icon: white;
+    }
+}
