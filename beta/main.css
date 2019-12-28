@@ -203,7 +203,6 @@
 }
 
 .contacticon {
-    color: #dddddd;
     margin-top: 11px;
 }
 
@@ -301,7 +300,7 @@
   .show {display:flex;} 
 
   .blackwhiteicon {
-      color: var(--black-white-icon);
+    color: var(--black-white-icon);
   }
 
 
