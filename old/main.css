@@ -3,529 +3,617 @@
     zoom: 1.0 ;
 } 
 
+:root {
+    --card-color: #17243f;
+}
+
 .body {
-    background-color: #333333;
-    overflow-x: hidden;
+    background: #1a2c50;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #325175, #1a2c50);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #325175, #1a2c50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin-left: 40px;
 }
 
-.headertext {
-    margin-left: 10px;
-    font-family: '-apple-system', BlinkMacSystemFont, 'IBM Plex Sans', Helvetica, sans-serif;
-    color: #dddddd;
-    border-top-width: 0px;
-    display: flex;
-    margin: 20px 0px 0px 15px;
-    font-size: 30px;
+.start {
+    margin-top: -40px;
 }
-.headerbackground {
-    background-color: #031d43;
-    align-self: baseline;
-    justify-content: space-between;
-    display: flex;
-    flex-direction: row;
-    margin: -10px -10px -10px -10px;
-    overflow-x: hidden;
-}
-.headerbutton {
-    font-family: '-apple-system', BlinkMacSystemFont, 'IBM Plex Sans', Helvetica, sans-serif;
-    color: #dddddd;
-    font-size: 20px;
-    font-weight: 500;
-    margin-top: 5px;
-    margin-right: 20px;
-    text-decoration: none;
-}
-.headerbutton:hover {
-    font-family: '-apple-system', BlinkMacSystemFont, 'IBM Plex Sans', Helvetica, sans-serif;
-    color: rgb(228, 156, 0);
-}
-.headerthemebutton {
-    font-family: '-apple-system', BlinkMacSystemFont, 'IBM Plex Sans', Helvetica, sans-serif;
-    color: #dddddd;
-    font-size: 15px;
-    margin-top: 3px;
-    margin-right: 20px;
-    text-decoration: none;
-    font-weight: 600;
-}
-.headerthemebutton:hover {
-    font-family: '-apple-system', BlinkMacSystemFont, 'IBM Plex Sans', Helvetica, sans-serif;
+
+.name {
     color: white;
-}
-.startp {
-    font-family: '-apple-system', BlinkMacSystemFont, 'IBM Plex Sans', Helvetica, sans-serif;
-    text-decoration: none;
-    color: #dddddd;
-    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    justify-self: center;
-    padding-bottom: 30px;
-    margin: 50px 20px 0px 20px;
+    font-size: 60px;
+    margin-left: -3px;
 }
 
-.contactbutton {
-    text-decoration: none;
-    font-weight: 600;
+.firstp {
     color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    margin-top: -20px;
+    margin-bottom: 40px;
 }
 
-.startpsmall {
-    font-family: '-apple-system', BlinkMacSystemFont, 'IBM Plex Sans', Helvetica, sans-serif;
-    text-decoration: none;
-    color: #dddddd;
-    font-size: 25px;
-    justify-self: center;
-}
-.firstdiv {
-    display: flex;
-    justify-content: center;
-}
 .insideheader {
-    background-color: #031d43;
-    color: #dddddd;
-    font-family: '-apple-system', BlinkMacSystemFont, 'IBM Plex Sans', Helvetica, sans-serif;
-    font-size: 30px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 30px;
-    padding-right: 30px;
-    font-weight: bold;
-    justify-self: center;
-    border-color: #031d43;
-    border-width: 1px;
-    border-style: solid;
-    border-radius: 100px;
-}
-.projectsdiv {
-    display: flex;
-    justify-content: center;
-}
-.headerbackground2 {
-    align-self: baseline;
-    justify-content: space-between;
-    display: flex;
-    flex-direction: row;
-    margin-left: -10;
-}
-.insidetext {
-    font-family: '-apple-system', BlinkMacSystemFont, 'IBM Plex Sans', Helvetica, sans-serif;
-}
-.project {
-    font-family: '-apple-system', BlinkMacSystemFont, 'IBM Plex Sans', Helvetica, sans-serif;
-    border-color: #111111;
-    border-width: 1px;
-    border-style: solid;
-    margin: 10px 30px 10px 30px;
-    padding: 15px 15px 15px 15px;
-    height: 200px;
-    width: 400px;
-    background-color: #111111; 
-    -webkit-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.5);
-    -moz-box-shadow:    0px 3px 5px 0px rgba(50, 50, 50, 0.5);
-    box-shadow:         0px 3px 5px 0px rgba(50, 50, 50, 0.5);
-    border-radius: 15px;
-    margin-top: 40px;
-}
-.projectbutton {
-    font-family: '-apple-system', BlinkMacSystemFont, 'IBM Plex Sans', Helvetica, sans-serif;
-    text-decoration: none;
-    color: #dddddd;
-    font-size: 25px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
     font-weight: 600;
-}
-.skillname {
-    font-family: '-apple-system', BlinkMacSystemFont, 'IBM Plex Sans', Helvetica, sans-serif;
-    text-decoration: none;
-    color: #dddddd;
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 45px;
+    margin-top: 120px;
+    margin-bottom: 50px;
     position: relative;
     top: 10px;
 }
-.projects {
-    display: flex;
-    justify-content: space-evenly;
+
+
+.project {
+    margin-bottom: 50px;
+    margin-right: 40px;
+    max-width: 370px;
+    min-width: 370px;
+    height: 300px;
+    flex-direction: column;
+    background: var(--card-color);
 }
-.projectlinkicon {
-    color:#dddddd;
-}
-.aboutmetext {
-    font-family: '-apple-system', BlinkMacSystemFont, 'IBM Plex Sans', Helvetica, sans-serif;
-    text-decoration: none;
-    color: #dddddd;
-    font-size: 30px;
+
+.projectname {
+    color: white;
+    font-family: 'Poppins', sans-serif;
     font-weight: 600;
+    font-size: 35px;
+    text-decoration: none;
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+.projectexp {
+    color: white;
+    opacity: 0.6;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing:  0.1mm;
+    margin-top: -10px;
     padding-left: 20px;
     padding-right: 20px;
 }
-.aboutmetextdiv {
-    display: flex;
-    justify-content: center;
+
+.detailbutton {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    position: relative;
+    top: 20px;
+    margin-left: 20px;
+    padding: 10px 10px 10px 10px;
+    background: #233961;
+    text-decoration: none;
 }
 
-.aboutmetextlastdiv {
+.projectcards {
     display: flex;
-    justify-content: center;
-    padding-bottom: 40px;
+    flex-direction: row;
+    overflow-x: hidden;
+}
+
+.skillcards {
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+}
+
+.schoolcards {
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+}
+
+.contactcards {
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
 }
 
 .skill {
-    font-family: '-apple-system', BlinkMacSystemFont, 'IBM Plex Sans', Helvetica, sans-serif;
-    border-color: #111111;
-    border-width: 1px;
-    border-style: solid;
-    margin: 10px 20px 10px 20px;
-    padding: 10px 10px 0px 10px;
-    height: 100px;
-    width: 300px;
+    margin-bottom: 50px;
+    margin-right: 40px;
+    max-width: 300px;
+    min-width: 300px;
+    height: 150px;
+    background: var(--card-color);
     display: flex;
-    justify-content: center;
-    background-color: #111111; 
-    -webkit-box-shadow: 0px 3px 11px 0px rgba(50, 50, 50, 0.40);
-    -moz-box-shadow:    0px 3px 11px 0px rgba(50, 50, 50, 0.40);
-    box-shadow:         0px 3px 11px 0px rgba(50, 50, 50, 0.40);
-    border-radius: 15px;
-    margin-top: 40px;
-}
-
-.giticon {
-    color: #dddddd;
-    margin-left: 20px;
-    margin-top: 10px;
-}
-
-.skills {
-    display: flex;
+    align-items: center;
     justify-content: space-evenly;
 }
 
-.education {
-    display: flex;
-    justify-content: space-evenly;
+
+.skillname {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 35px;
+    margin-top: 20px;
+    padding-left: 20px;
 }
+
 .school {
-    font-family: '-apple-system', BlinkMacSystemFont, 'IBM Plex Sans', Helvetica, sans-serif;
-    border-color: #111111;
-    border-width: 1px;
-    border-style: solid;
-    margin: 20px 20px 20px 20px;
-    padding: 15px 15px 15px 15px;
-    height: 220px;
-    width: 200px;
-    background-color: #111111; 
-    -webkit-box-shadow: 0px 3px 11px 0px rgba(50, 50, 50, 0.40);
-    -moz-box-shadow:    0px 3px 11px 0px rgba(50, 50, 50, 0.40);
-    box-shadow:         0px 3px 11px 0px rgba(50, 50, 50, 0.40);
-    border-radius: 15px;
-}
-.contactsmain {
-    display: flex;
-    justify-content: center;
-}
-.contacts {
-    display: flex;
-    justify-content: center;
+    margin-bottom: 50px;
+    margin-right: 40px;
+    max-width: 350px;
+    min-width: 350px;
+    height: 320px;
     flex-direction: column;
-}
-.contact {
-    font-family: '-apple-system', BlinkMacSystemFont, 'IBM Plex Sans', Helvetica, sans-serif;
-    border-color: #111111;
-    border-width: 1px;
-    border-style: solid;
-    border-radius: 5px;
-    margin: 20px 10px 10px 10px;
-    padding: 10px 10px 0px 10px;
-    height: 70px;
-    width: 300px;
-    display: flex;
-    justify-content: center;
-    background-color: #111111; 
-    font-size: 20px;
-    font-weight: 600;
-    border-radius: 15px;
-}
-.footer {
-    font-family: '-apple-system', BlinkMacSystemFont, 'IBM Plex Sans', Helvetica, sans-serif;
-    font-weight: 600;
-}
-.mainfirstdiv {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.maindiv {
-    display: flex;
-    justify-content: center;
+    background: var(--card-color);
 }
 
-.project-exp {
-    font-size: 15px;
-}
-
-.contact-a {
+.schoolname {
+    color: white;
+    font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    color: #dddddd;
-    margin-bottom: 10px;
     text-decoration: none;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-right: 20px;
+    padding-left: 20px;
+}
+
+.schoolplight {
+    color: white;
+    opacity: 0.6;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
     font-size: 20px;
+    letter-spacing:  0.1mm;
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.contact {
+    margin-bottom: 50px;
+    margin-right: 40px;
+    max-width: 330px;
+    min-width: 330px;
+    height: 120px;
+    background: var(--card-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: visible;
+}
+
+
+.contactname {
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.contactlongname {
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
 }
 
 .contacticon {
     color: #dddddd;
-    margin-right: 15px;
     margin-top: 11px;
 }
 
-#p {
-    color: #dddddd;
-    text-decoration: none;
-    font-family: '-apple-system', BlinkMacSystemFont, 'IBM Plex Sans', Helvetica, sans-serif;
+.footertext{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
 }
 
-@media screen and (max-width:1100px) {
-    .startp {
-        font-size: 25px;
-        padding-bottom: 30px;
-        text-align: center;
+.footer {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.scrollprojects {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    opacity: 0.7;
+    display: none;
+    position: relative;
+    bottom: 20px;
+}
+
+.scrollskills {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    opacity: 0.7;
+    display: none;
+    position: relative;
+    bottom: 20px;
+}
+
+.scrolleducation {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    opacity: 0.7;
+    display: none;
+    position: relative;
+    bottom: 20px;
+}
+
+.scrollcontact {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    opacity: 0.7;
+    display: none;
+    position: relative;
+    bottom: 20px;
+}
+
+ .dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 16px;
+    margin-right: 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .dropbtn:hover {
+    background-color: var(--card-color);
+  }
+
+  .dropbtn:focus {
+    background-color: var(--card-color);
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    background: var(--card-color);
+    min-width: 120px;
+    right: 0;
+    margin-right: 20px;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    text-align: center; 
+    color: white;
+    padding: 12px 0px 12px 0px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    justify-self: flex-end;
+  }
+  
+  .dropdown-content a:hover {background: rgb(12, 20, 36);}
+  
+  .show {display:flex;} 
+
+
+
+
+@media screen and (max-width:1300px) {
+    .name{
+        font-size: 50px;
     }
-    .aboutmetext {
-        font-size: 25px;
-        text-align: center;
+
+    .firstp {
+        font-size: 20px;
     }
-    .aboutmetextlastdiv {
-        padding-bottom: 30px;
-        text-align: center;
+    
+    .insideheader {
+        font-size: 35px;
+    }
+    
+    
+    .project {
+        min-width: 310px;
+        height: 250px;
+    }
+    
+    .projectname {
+        font-size: 25px;
+    }
+    
+    .projectexp {
+        font-size: 17px;
+    }
+    
+    .detailbutton {
+        font-size: 17px;
+    }
+    
+    .skill {
+        min-width: 280px;
+        height: 130px;
+    }
+    
+    
+    .skillname {
+        font-size: 25px;
+        margin-right: 10px;
+    }
+    
+    .school {
+        min-width: 330px;
+        height: 260px;
+    }
+    
+    .schoolname {
+        font-size: 25px;
+    }
+    
+    .schoolplight {
+        font-size: 17px;
+    }
+    
+    .contact {
+        min-width: 320px;
+        height: 110px;
+    }
+    
+    .contacticon {
+        color: #dddddd;
+        margin-top: 11px;
+    }
+    
+    .footertext {
+        font-size: 17px;
+    }
+    
+    .footer {
+        margin-top: 20px;
     }
 }
 
 @media screen and (max-width:850px) {
-    .projectbutton {
-        font-size: 20px;
-    }
-    .project {
-        height: 200px;
-        width: 250px;
-    }
-    .headertext {
-        font-size: 20px;
-        margin-top: 18px;
-    }
-    .headerbutton {
-        font-size: 15px;
-    }
-    .headerbutton:hover {
-        font-size: 15px;
-    }
-    .startp {
-        margin: 30px 20px -25px 20px;
-        font-size: 25px;
-    }
-    .insideheader {
-        font-size: 25px;
-        padding-right: 20px;
-        padding-left: 20px;
-    }
-    .aboutmetext {
-        font-size: 20px;
-        text-align: center;
-    }
-    .aboutmetextlastdiv {
-        font-size: 20px;
-        padding-bottom: 0px;
-    }
-    .skills {
-        flex-direction: column;
-    }
-    .container {
-        display: flex;
-        justify-content: center;
-    }
-    .education {
-        flex-direction: column;
-    }
-    .projects {
-        flex-direction: column;
-    }
-    .aboutmetextdiv {
-        padding-bottom: -20px;
-        padding-top: -20px;
-    }
     .skill {
-        width: 200px;
+        min-width: 260px;
+        height: 100px;
     }
+    
     .skillname {
-        position: relative;
-        top: 15px;
+        font-size: 25px;
+    }
+    
+    .school {
+        min-width: 300px;
+        height: 230px;
+    }
+    
+    .schoolname {
+        font-size: 20px;
+    }
+    
+    .schoolplight {
+        font-size: 15px;
+    }
+    
+    .contact {
+        min-width: 300px;
+        height: 90px;
+    }
+
+    .contactname {
+        font-size: 20px;
+    }
+    
+    .contacticon {
+        color: #dddddd;
+        margin-top: 11px;
+    }
+    
+    .footertext {
         font-size: 17px;
+    }
+    
+    .footer {
+        margin-top: 20px;
     }
 }
 
 @media screen and (max-width:600px) {
-    .projectbutton {
-        font-size: 20px;
-    }
-    .aboutmetextdiv {
-        margin-bottom: -20px;
-    }
-}
-
-@media screen and (max-width:550px) {
-    .headerbutton {
-        display: none;
-    }
-    .headertext {
-        padding-bottom: 10px;
-        font-size: 30px;
-        margin-top: 16px;
-    }
-    .contact {
-        width: 250px;
-    }
-    .contact-a {
-        font-size: 15px;
-    }
-    .startp {
-        margin-top: 30px;
-        font-size: 22px;
-    }
-    .headerthemebutton {
-        font-size: 14px;
-    }
-    .headerthemebutton:hover {
-        font-size: 14px;
-    }
-}
-
-@media screen and (max-width:300px) {
-    .headertext {
-        font-size: 20px;
-    }
-    .startp {
-        font-size: 20px;
-    }
-    .headerthemebutton {
-        font-size: 12px;
-    }
-    .headerthemebutton:hover {
-        font-size: 12px;
-    }
-}
-
-@media (prefers-color-scheme: light) {
-
-
-    .contactbutton {
-        color: black;
-    }
 
     .body {
-        background-color: #ebebeb;
-        overflow-x: hidden;
+        margin-left: 30px;
     }
 
-    .headertext {
-        color: white;
+    .name{
+        font-size: 40px;
     }
-    .headerbutton {
-        color: white;;
+
+    .firstp {
+        font-size: 20px;
     }
-    .headerthemebutton {
-        color: white;
-    }
+    
     .insideheader {
-        color: white;
+        font-size: 35px;
     }
-    .headerbackground2 {
-        background-color: #031d43;
-    }
+    
+    
     .project {
-        border-color: #dbdbdb;
-        background-color: #dbdbdb; 
-        -webkit-box-shadow: 0px 3px 11px 0px rgba(50, 50, 50, 0.40);
-        -moz-box-shadow:    0px 3px 11px 0px rgba(50, 50, 50, 0.40);
-        box-shadow:         0px 3px 11px 0px rgba(50, 50, 50, 0.40);
+        min-width: 310px;
+        height: 250px;
     }
-    .projectbutton {
-        color: black;
+    
+    .projectname {
+        font-size: 25px;
     }
-    .skillname {
-        color: black;
+    
+    .projectexp {
+        font-size: 17px;
     }
-    .giticon {
-        color: black;
+    
+    .detailbutton {
+        font-size: 17px;
     }
-    .projectlinkicon {
-        color:black;
-    }
-    .aboutmetext {
-        color: black;
-    }
+    
     .skill {
-        border-color: #dbdbdb;
-        background-color: #dbdbdb; 
-        -webkit-box-shadow: 0px 3px 11px 0px rgba(50, 50, 50, 0.40);
-        -moz-box-shadow:    0px 3px 11px 0px rgba(50, 50, 50, 0.40);
-        box-shadow:         0px 3px 11px 0px rgba(50, 50, 50, 0.40);
+        min-width: 280px;
+        height: 130px;
     }
+    
+    
+    .skillname {
+        font-size: 25px;
+        margin-right: 10px;
+    }
+    
     .school {
-        border-color: #dbdbdb;
-        background-color: #dbdbdb; 
-        -webkit-box-shadow: 0px 3px 11px 0px rgba(50, 50, 50, 0.40);
-        -moz-box-shadow:    0px 3px 11px 0px rgba(50, 50, 50, 0.40);
-        box-shadow:         0px 3px 11px 0px rgba(50, 50, 50, 0.40);
+        min-width: 330px;
+        height: 260px;
     }
+    
+    .schoolname {
+        font-size: 25px;
+    }
+    
+    .schoolplight {
+        font-size: 17px;
+    }
+    
     .contact {
-        border-color: #dbdbdb;
-        background-color: #dbdbdb; 
-        -webkit-box-shadow: 0px 3px 11px 0px rgba(50, 50, 50, 0.40);
-        -moz-box-shadow:    0px 3px 11px 0px rgba(50, 50, 50, 0.40);
-        box-shadow:         0px 3px 11px 0px rgba(50, 50, 50, 0.40);
-    }
-    .contact-a {
-        text-decoration: #a0a0a0;
-        color: black;
+        min-width: 320px;
+        height: 110px;
     }
     
     .contacticon {
-        color: black;
+        color: #dddddd;
+        margin-top: 11px;
+    }
+    
+    .footertext {
+        font-size: 17px;
+    }
+    
+    .footer {
+        margin-top: 20px;
     }
 
-    #p {
-        color: black;
+    .dropbtn {
+        margin-right: 0px;
+    }     
+
+    .dropbtn:focus {
+        background-color: var(--card-color);
     }
 
-    .insideheader {
-        -webkit-box-shadow: 0px 3px 23px 0px rgba(50, 50, 50, 0.65);
--moz-box-shadow:    0px 3px 23px 0px rgba(50, 50, 50, 0.65);
-box-shadow:         0px 3px 23px 0px rgba(50, 50, 50, 0.65);
-
+    .dropbtn:hover{
+        background-color: transparent;
+    }
+    
+    .dropdown-content {
+        margin-right: 0px;
+        margin-top: -5px;
     }
 }
 
-@media (prefers-color-scheme: dark) {
+@media screen and (max-width:500px) {
+    .body {
+        margin-left: 20px;
+
+    }
+
+    .name {
+        font-size: 37px;
+        font-weight: normal;
+        margin-bottom: 40px;
+    }
+
+    .firstp {
+        font-size: 17px;
+        font-weight: normal;
+        margin-right: 30px;
+    }
+
     .insideheader {
-        -webkit-box-shadow: 0px 0px 0px 0px rgba(50, 50, 50, 0);
-        -moz-box-shadow:    0px 0px 0px 0px rgba(50, 50, 50, 0);
-        box-shadow:         0px 0px 0px 0px rgba(50, 50, 50, 0);
+        font-weight: normal;
     }
-    .project {
-        -webkit-box-shadow: 0px 0px 0px 0px rgba(50, 50, 50, 0);
-        -moz-box-shadow:    0px 0px 0px 0px rgba(50, 50, 50, 0);
-        box-shadow:         0px 0px 0px 0px rgba(50, 50, 50, 0);
+
+    .projectexp {
+        font-weight: normal;
     }
-    .skill {
-        -webkit-box-shadow: 0px 0px 0px 0px rgba(50, 50, 50, 0);
-        -moz-box-shadow:    0px 0px 0px 0px rgba(50, 50, 50, 0);
-        box-shadow:         0px 0px 0px 0px rgba(50, 50, 50, 0);
+
+    .schoolplight {
+        font-weight: normal;
     }
-    .school {
-        -webkit-box-shadow: 0px 0px 0px 0px rgba(50, 50, 50, 0);
-        -moz-box-shadow:    0px 0px 0px 0px rgba(50, 50, 50, 0);
-        box-shadow:         0px 0px 0px 0px rgba(50, 50, 50, 0);
+
+    .dropbtn {
+        margin-right: -10px;
+    }     
+    
+    .dropdown-content {
+        margin-right: -10px;
     }
-    .contact {
-        -webkit-box-shadow: 0px 0px 0px 0px rgba(50, 50, 50, 0);
-        -moz-box-shadow:    0px 0px 0px 0px rgba(50, 50, 50, 0);
-        box-shadow:         0px 0px 0px 0px rgba(50, 50, 50, 0);
+}
+
+@media screen and (max-width:710px) {
+    .scrollprojects {
+        display: unset;
+    }
+    .projectcards {
+        overflow-x: scroll;
+    }
+}
+
+@media screen and (max-width:960px) {
+    .scrollskills {
+        display: unset;
+    }
+    .skillcards {
+        overflow-x: scroll;
+    }
+}
+
+@media screen and (max-width:1120px) {
+    .scrolleducation {
+        display: unset;
+    }
+    .schoolcards {
+        overflow-x: scroll;
+    }
+}
+
+@media screen and (max-width:1850px) {
+    .scrollcontact {
+        display: unset;
+    }
+    .contactcards {
+        overflow-x: scroll;
+    }
+}
+
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+    .body {
+        background: #141E30;
+        background: -webkit-linear-gradient(to left, #243B55, #141E30);
+        background: linear-gradient(to left, #243B55, #141E30);
+    }
+
+    :root {
+        --card-color: #141E30;
     }
 }
