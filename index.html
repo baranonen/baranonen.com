@@ -5,25 +5,28 @@
 
 <head>
     <script type="text/javascript">
-        (function() {
-          var css = document.createElement('link');
-          css.href = 'https://use.fontawesome.com/releases/v5.1.0/css/all.css';
-          css.rel = 'stylesheet';
-          css.type = 'text/css';
-          document.getElementsByTagName('head')[0].appendChild(css);
+        (function () {
+            var css = document.createElement('link');
+            css.href = 'https://use.fontawesome.com/releases/v5.1.0/css/all.css';
+            css.rel = 'stylesheet';
+            css.type = 'text/css';
+            document.getElementsByTagName('head')[0].appendChild(css);
         })();
-      </script>
-        <script>
-            if ('serviceWorker' in navigator) {
-              window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/service-worker.js')
-                    .then((reg) => {
-                     console.log('Service worker registered.', reg);
+    </script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function () {
+                navigator.serviceWorker.register('/service-worker.js').then(function (registration) {
+                    // Registration was successful
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                }, function (err) {
+                    // registration failed :(
+                    console.log('ServiceWorker registration failed: ', err);
                 });
-                });
-            }  
-            </script>  
-    <link href="https://fonts.googleapis.com/css?family=Poppins:600,700&display=swap" rel="stylesheet"> 
+            });
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="main.css">
     <meta charset="utf-8">
     <title>Baran Önen</title>
@@ -52,8 +55,8 @@
         <div></div>
 
         <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">EN 
-            <i class="fa fa-caret-down"></i> </button>
+            <button onclick="myFunction()" class="dropbtn">EN
+                <i class="fa fa-caret-down"></i> </button>
             <div id="myDropdown" class="dropdown-content">
                 <a href="./index.html">🇬🇧 English</a>
                 <a href="./tr/index.html">🇹🇷 Türkçe</a>
@@ -63,22 +66,22 @@
     </div>
 
     <script>
-    function myFunction() {
-        document.getElementById("myDropdown").classList.toggle("show");
-    }
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
 
-    window.onclick = function(event) {
-        if (!event.target.matches('.dropbtn')) {
-            var dropdowns = document.getElementsByClassName("dropdown-content");
-            var i;
-            for (i = 0; i < dropdowns.length; i++) {
-                var openDropdown = dropdowns[i];
-                if (openDropdown.classList.contains('show')) {
-                    openDropdown.classList.remove('show');
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
                 }
             }
         }
-    }
     </script>
 
     <div class="start">
@@ -123,17 +126,20 @@
         <div class="skillcards">
             <div class="skill">
                 <h1 class="skillname">HTML</h1>
-                <i style="color: #da5525; margin-left: 10px; margin-right: 10px;" class="fab fa-html5 fa-4x" aria-hidden="true"></i>
+                <i style="color: #da5525; margin-left: 10px; margin-right: 10px;" class="fab fa-html5 fa-4x"
+                    aria-hidden="true"></i>
             </div>
 
             <div class="skill">
                 <h1 class="skillname">Git</h1>
-                <i style="margin-left: 10px; margin-right: 10px; color: var(--black-white-icon)" class="fab fa-github fa-4x" aria-hidden="true"></i>
+                <i style="margin-left: 10px; margin-right: 10px; color: var(--black-white-icon)"
+                    class="fab fa-github fa-4x" aria-hidden="true"></i>
             </div>
 
             <div class="skill">
                 <h1 class="skillname">React Native</h1>
-                <i style="color: #61dafb; margin-left: 10px; margin-right: 20px;" class="fab fa-react fa-4x" aria-hidden="true"></i>
+                <i style="color: #61dafb; margin-left: 10px; margin-right: 20px;" class="fab fa-react fa-4x"
+                    aria-hidden="true"></i>
             </div>
         </div>
     </div>
@@ -210,7 +216,10 @@
 
     <div id="footer" class="footer">
         <p class="footertext">© Copyright Baran Önen 2020</p>
-        <a href="//www.dmca.com/Protection/Status.aspx?ID=12dec948-7f79-45f7-a59f-17818812f70a" title="DMCA.com Protection Status" class="dmca-badge"> <img src="https://images.dmca.com/Badges/dmca-badge-w150-5x1-02.png?ID=12dec948-7f79-45f7-a59f-17818812f70a" alt="DMCA.com Protection Status" /></a>
+        <a href="//www.dmca.com/Protection/Status.aspx?ID=12dec948-7f79-45f7-a59f-17818812f70a"
+            title="DMCA.com Protection Status" class="dmca-badge"> <img
+                src="https://images.dmca.com/Badges/dmca-badge-w150-5x1-02.png?ID=12dec948-7f79-45f7-a59f-17818812f70a"
+                alt="DMCA.com Protection Status" /></a>
         <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js">
         </script>
     </div>
