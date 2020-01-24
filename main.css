@@ -4,16 +4,16 @@
 } 
 
 :root {
-    --card-background: linear-gradient(145deg, #ffffff, #d8d8d8);
-    --card-box-shadow: 5px 5px 10px #dadada, -5px -5px 10px #ffffff;
+    --card-background: #e7e7e7;
+    --card-box-shadow: 9px 9px 18px #b9b9b9, -9px -9px 18px #ffffff;
     --text-color: black;
-    --card-button-background: linear-gradient(145deg, #e6e6e6, #ffffff);
-    --card-button-box-shadow: 5px 5px 10px #dadada, -5px -5px 10px #ffffff;
+    --card-button-background: #e7e7e7;
+    --card-button-box-shadow: 9px 9px 18px #b9b9b9, -9px -9px 18px #ffffff;
     --black-white-icon: black;
 }
 
 .body {
-    background: #f0f0f0;
+    background: #e7e7e7;
     margin-left: 40px;
 }
 
@@ -54,6 +54,7 @@
     margin-top: 30px;
     margin-bottom: 40px;
     margin-left: 40px;
+    margin-right: 20px;
     max-width: 370px;
     min-width: 370px;
     height: 300px;
@@ -132,6 +133,7 @@
     margin-top: 30px;
     margin-bottom: 40px;
     margin-left: 40px;
+    margin-right: 20px;
     max-width: 300px;
     min-width: 300px;
     height: 150px;
@@ -157,6 +159,7 @@
     margin-top: 30px;
     margin-bottom: 40px;
     margin-left: 40px;
+    margin-right: 30px;
     max-width: 350px;
     min-width: 350px;
     height: 320px;
@@ -193,6 +196,7 @@
     margin-top: 30px;
     margin-bottom: 40px;
     margin-left: 40px;
+    margin-right: 20px;
     max-width: 330px;
     min-width: 330px;
     height: 120px;
@@ -288,6 +292,7 @@
     border: none;
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
+    outline: none
   }
   
   .dropdown {
@@ -626,15 +631,15 @@
 
 @media (prefers-color-scheme: dark) {
     .body {
-        background: #1f1f1f;
+        background: #373737;
     }
 
     :root {
         --text-color: white;
         --black-white-icon: white;
-        --card-background: linear-gradient(145deg, #1c1c1c, #212121);
-        --card-box-shadow: 5px 5px 10px #1c1c1c, -5px -5px 10px #222222;
-        --card-button-background: linear-gradient(145deg, #1c1c1c, #212121);
-        --card-button-box-shadow: 5px 5px 10px #1c1c1c, -5px -5px 10px #222222;
+        --card-background: linear-gradient(145deg, #3b3b3b, #323232);
+        --card-box-shadow: 9px 9px 18px #2c2c2c, -9px -9px 18px #424242;
+        --card-button-background: linear-gradient(145deg, #323232, #3b3b3b);
+        --card-button-box-shadow: 9px 9px 18px #2c2c2c, -9px -9px 18px #424242;
     }
 }
