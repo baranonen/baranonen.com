@@ -13,6 +13,16 @@
           document.getElementsByTagName('head')[0].appendChild(css);
         })();
       </script>
+    <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/service-worker.js')
+            .then((reg) => {
+             console.log('Service worker registered.', reg);
+        });
+        });
+    }  
+    </script>
     <link href="https://fonts.googleapis.com/css?family=Poppins:600,700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" type="text/css" href="../main.css">
     <meta charset="utf-8">
