@@ -453,7 +453,7 @@ body {
 
 @media screen and (max-width:600px) {
 
-    .body {
+    body {
         margin-left: 30px;
     }
 
@@ -547,7 +547,7 @@ body {
 }
 
 @media screen and (max-width:500px) {
-    .body {
+    body {
         margin-left: 20px;
 
     }
@@ -630,7 +630,7 @@ body {
 }
 
 @media (prefers-color-scheme: dark) {
-    .body {
+    body {
         background: #373737;
     }
 
