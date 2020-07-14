@@ -4,15 +4,17 @@
 } 
 
 :root {
-    --card-color: #ffffff;
+    --card-background: rgb(254, 255, 255);
     --text-color: black;
-    --card-button: #cfcfcf;
+    --light-text-color: rgb(142,142,147);
+    --button-color: rgb(17, 114, 198);
     --black-white-icon: black;
 }
 
-.body {
-    background: #cfcfcf;
+body {
+    background: rgb(241, 242, 246);
     margin-left: 40px;
+    margin-right: 0px;
 }
 
 .start {
@@ -21,7 +23,7 @@
 
 .name {
     color: var(--text-color);
-    font-family: 'Poppins', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, Roboto;
     font-weight: 600;
     font-size: 60px;
     margin-left: -3px;
@@ -29,7 +31,7 @@
 
 .firstp {
     color: var(--text-color);
-    font-family: 'Poppins', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, Roboto;
     font-weight: 600;
     font-size: 30px;
     margin-top: -20px;
@@ -38,7 +40,7 @@
 
 .insideheader {
     color: var(--text-color);
-    font-family: 'Poppins', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, Roboto;
     font-weight: 600;
     font-size: 45px;
     margin-top: 120px;
@@ -49,18 +51,22 @@
 
 
 .project {
-    margin-bottom: 50px;
-    margin-right: 40px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+    margin-right: 0px;
     max-width: 370px;
     min-width: 370px;
     height: 300px;
-    flex-direction: column;
-    background: var(--card-color);
+    flex-direction: column; 
+    border-radius: 20px;
+    background: var(--card-background);
+    box-shadow: var(--card-box-shadow);
 }
 
 .projectname {
     color: var(--text-color);
-    font-family: 'Poppins', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, Roboto;
     font-weight: 600;
     font-size: 35px;
     text-decoration: none;
@@ -71,25 +77,22 @@
 .projectexp {
     color: var(--text-color);
     opacity: 0.6;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
+    font-family: -apple-system, BlinkMacSystemFont, Roboto;
+    font-weight: 400;
     font-size: 20px;
-    letter-spacing:  0.1mm;
     margin-top: -10px;
     padding-left: 20px;
     padding-right: 20px;
 }
 
 .detailbutton {
-    color: var(--text-color);
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 20px;
+    color: var(--button-color);
+    font-family: -apple-system, BlinkMacSystemFont, Roboto;
+    font-weight: 400;
+    font-size: 17px;
     position: relative;
     top: 20px;
     margin-left: 20px;
-    padding: 10px 10px 10px 10px;
-    background: var(--card-button);
     text-decoration: none;
 }
 
@@ -97,33 +100,41 @@
     display: flex;
     flex-direction: row;
     overflow-x: hidden;
+    margin-left: -40px;
 }
 
 .skillcards {
     display: flex;
     flex-direction: row;
     overflow-x: hidden;
+    margin-left: -40px;
 }
 
 .schoolcards {
     display: flex;
     flex-direction: row;
     overflow-x: hidden;
+    margin-left: -40px;
 }
 
 .contactcards {
     display: flex;
     flex-direction: row;
     overflow-x: hidden;
+    margin-left: -40px;
 }
 
 .skill {
-    margin-bottom: 50px;
-    margin-right: 40px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+    margin-right: 0px;
     max-width: 300px;
     min-width: 300px;
     height: 150px;
-    background: var(--card-color);
+    border-radius: 20px;
+    background: var(--card-background);
+    box-shadow: var(--card-box-shadow);
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -132,7 +143,7 @@
 
 .skillname {
     color: var(--text-color);
-    font-family: 'Poppins', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, Roboto;
     font-weight: 600;
     font-size: 35px;
     margin-top: 20px;
@@ -140,18 +151,22 @@
 }
 
 .school {
-    margin-bottom: 50px;
-    margin-right: 40px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+    margin-right: 0px;
     max-width: 350px;
     min-width: 350px;
     height: 320px;
     flex-direction: column;
-    background: var(--card-color);
+    border-radius: 20px;
+    background: var(--card-background);
+    box-shadow: var(--card-box-shadow);
 }
 
 .schoolname {
     color: var(--text-color);
-    font-family: 'Poppins', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, Roboto;
     font-weight: 600;
     text-decoration: none;
     font-size: 30px;
@@ -163,22 +178,25 @@
 .schoolplight {
     color: var(--text-color);
     opacity: 0.6;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
+    font-family: -apple-system, BlinkMacSystemFont, Roboto;
+    font-weight: 400;
     font-size: 20px;
-    letter-spacing:  0.1mm;
     margin-top: 10px;
     padding-left: 20px;
     padding-right: 20px;
 }
 
 .contact {
-    margin-bottom: 50px;
-    margin-right: 40px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+    margin-right: 0px;
     max-width: 330px;
     min-width: 330px;
     height: 120px;
-    background: var(--card-color);
+    border-radius: 20px;
+    background: var(--card-background);
+    box-shadow: var(--card-box-shadow);
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -189,7 +207,7 @@
 .contactname {
     color: var(--text-color);
     text-decoration: none;
-    font-family: 'Poppins', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, Roboto;
     font-weight: 600;
     font-size: 20px;
 }
@@ -197,7 +215,7 @@
 .contactlongname {
     color: var(--text-color);
     text-decoration: none;
-    font-family: 'Poppins', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, Roboto;
     font-weight: 600;
     font-size: 15px;
 }
@@ -207,9 +225,9 @@
 }
 
 .footertext{
-    color: var(--text-color);
-    font-family: 'Poppins', sans-serif;
-    font-size: 20px;
+    color: var(--light-text-color);
+    font-family: -apple-system, BlinkMacSystemFont, Roboto;
+    font-size: 15px;
 }
 
 .footer {
@@ -219,85 +237,56 @@
 
 .scrollprojects {
     color: var(--text-color);
-    font-family: 'Poppins', sans-serif;
-    font-size: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, Roboto;
+    font-size: 17px;
     opacity: 0.7;
     display: none;
     position: relative;
+    font-weight: 400;
     bottom: 20px;
 }
 
 .scrollskills {
     color: var(--text-color);
-    font-family: 'Poppins', sans-serif;
-    font-size: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, Roboto;
+    font-size: 17px;
     opacity: 0.7;
     display: none;
     position: relative;
     bottom: 20px;
+    font-weight: 400;
 }
 
 .scrolleducation {
     color: var(--text-color);
-    font-family: 'Poppins', sans-serif;
-    font-size: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, Roboto;
+    font-size: 17px;
     opacity: 0.7;
     display: none;
     position: relative;
     bottom: 20px;
+    font-weight: 400;
 }
 
 .scrollcontact {
     color: var(--text-color);
-    font-family: 'Poppins', sans-serif;
-    font-size: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, Roboto;
+    font-size: 17px;
     opacity: 0.7;
     display: none;
     position: relative;
     bottom: 20px;
+    font-weight: 400;
 }
 
- .dropbtn {
-    background-color: transparent;
-    color: var(--text-color);
-    padding: 16px;
-    margin-right: 20px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropdown-content {
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    position: absolute;
-    background: var(--card-color);
-    min-width: 120px;
-    right: 0;
-    margin-right: 20px;
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    text-align: center; 
-    color: var(--text-color);
-    padding: 12px 0px 12px 0px;
+.langbtn {
+    color: var(--light-text-color);
+    font-family: -apple-system, BlinkMacSystemFont, Roboto;
     text-decoration: none;
-    display: block;
-    font-family: 'Poppins', sans-serif;
-    justify-self: flex-end;
-  }
-  
-  .dropdown-content a:hover {var(--text-color);}
-  
-  .show {display:flex;} 
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-right: 30px;
+}
 
   .blackwhiteicon {
     color: var(--black-white-icon);
@@ -348,7 +337,7 @@
     
     .school {
         min-width: 330px;
-        height: 260px;
+        height: 280px;
     }
     
     .schoolname {
@@ -365,7 +354,6 @@
     }
     
     .contacticon {
-        color: #dddddd;
         margin-top: 11px;
     }
     
@@ -390,7 +378,7 @@
     
     .school {
         min-width: 300px;
-        height: 230px;
+        height: 250px;
     }
     
     .schoolname {
@@ -411,7 +399,6 @@
     }
     
     .contacticon {
-        color: #dddddd;
         margin-top: 11px;
     }
     
@@ -426,7 +413,7 @@
 
 @media screen and (max-width:600px) {
 
-    .body {
+    body {
         margin-left: 30px;
     }
 
@@ -473,7 +460,7 @@
     
     .school {
         min-width: 330px;
-        height: 260px;
+        height: 280px;
     }
     
     .schoolname {
@@ -490,7 +477,6 @@
     }
     
     .contacticon {
-        color: #dddddd;
         margin-top: 11px;
     }
     
@@ -502,64 +488,56 @@
         margin-top: 20px;
     }
 
-    .dropbtn {
-        margin-right: 0px;
-    }     
-
-    .dropbtn:focus {
-        background-color: var(--card-color);
-    }
-
-    .dropbtn:hover{
-        background-color: transparent;
-    }
-    
-    .dropdown-content {
-        margin-right: 0px;
-        margin-top: -5px;
+    .langbtn {
+        margin-right: 20px;
     }
 }
 
 @media screen and (max-width:500px) {
-    .body {
+    body {
         margin-left: 20px;
 
     }
 
     .name {
         font-size: 37px;
-        font-weight: normal;
         margin-bottom: 40px;
     }
 
     .firstp {
         font-size: 17px;
-        font-weight: normal;
         margin-right: 30px;
     }
 
-    .insideheader {
-        font-weight: normal;
-    }
-
-    .projectexp {
-        font-weight: normal;
-    }
-
-    .schoolplight {
-        font-weight: normal;
-    }
-
     .dropbtn {
-        margin-right: -10px;
+        padding: 10px;
+        margin-right: 10px;
+        font-size: 12px;
+        border-radius: 15px;
     }     
     
     .dropdown-content {
-        margin-right: -10px;
+        margin-right: 10px;
+    }
+
+    .project {
+        border-radius: 15px;
+    }
+
+    .skill {
+        border-radius: 15px;
+    }
+
+    .school {
+        border-radius: 15px;
+    }
+
+    .contact {
+        border-radius: 15px;
     }
 }
 
-@media screen and (max-width:710px) {
+@media screen and (max-width:1710px) {
     .scrollprojects {
         display: unset;
     }
@@ -601,14 +579,15 @@
 }
 
 @media (prefers-color-scheme: dark) {
-    .body {
-        background: black;
+    body {
+        background: #000000;
     }
 
-    :root {
-        --card-color: #161616;
+    :root {    
+        --card-background: rgb(27, 28, 30);
         --text-color: white;
-        --card-button: black;
+        --light-text-color: rgb(142,142,147);
+        --button-color: rgb(10, 132, 255);
         --black-white-icon: white;
     }
 }
