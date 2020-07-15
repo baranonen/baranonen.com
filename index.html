@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--© Copyright Baran Önen 2019-->
+<!--© Copyright Baran Önen 2020-->
 
 <html lang="en">
 
@@ -13,20 +13,8 @@
             document.getElementsByTagName('head')[0].appendChild(css);
         })();
     </script>
-    <script>
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', function () {
-                navigator.serviceWorker.register('/service-worker.js').then(function (registration) {
-                    // Registration was successful
-                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
-                }, function (err) {
-                    // registration failed :(
-                    console.log('ServiceWorker registration failed: ', err);
-                });
-            });
-        }
-    </script>
-    <link href="https://fonts.googleapis.com/css?family=Poppins:600,700&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/72e6c401a8.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="main.css">
     <meta charset="utf-8">
     <title>Baran Önen</title>
@@ -50,39 +38,11 @@
 
 <body>
 
-    <div style="display: flex; flex-direction: row; justify-content: space-between">
-
-        <div></div>
-
-        <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">EN
-                <i class="fa fa-caret-down"></i> </button>
-            <div id="myDropdown" class="dropdown-content">
-                <a href="./">🇬🇧 English</a>
-                <a href="./tr/">🇹🇷 Türkçe</a>
-            </div>
+    <div style="display: flex; flex-direction: row; justify-content: space-between;">
+        <div>
         </div>
-
+        <a class="langbtn" href="tr/">Türkçe <i class="fa fa-angle-right" aria-hidden="true"></i></a>
     </div>
-
-    <script>
-        function myFunction() {
-            document.getElementById("myDropdown").classList.toggle("show");
-        }
-
-        window.onclick = function (event) {
-            if (!event.target.matches('.dropbtn')) {
-                var dropdowns = document.getElementsByClassName("dropdown-content");
-                var i;
-                for (i = 0; i < dropdowns.length; i++) {
-                    var openDropdown = dropdowns[i];
-                    if (openDropdown.classList.contains('show')) {
-                        openDropdown.classList.remove('show');
-                    }
-                }
-            }
-        }
-    </script>
 
     <div class="start">
         <h1 class="name">Baran Önen</h1>
@@ -94,46 +54,55 @@
         <h1 class="insideheader">About Me</h1>
         <p class="firstp">I started programming in 2015</p>
         <p class="firstp">In 2018 I started learning React Native and made a school app</p>
-        <p class="firstp">Now, I'm focused on Web Development & Swift</p>
+        <p class="firstp">Now, I'm focused on Web Development & Python</p>
     </div>
 
     <div class="projects">
         <h1 class="insideheader">Projects</h1>
 
-        <h1 class="scrollprojects"><i class="fas fa-arrow-left"></i> Scroll left for more</h1>
+        <h1 class="scrollprojects"><i class="fa fa-angle-left" aria-hidden="true"></i> Scroll left for more</h1>
 
         <div class="projectcards">
 
             <div class="project">
-                <h2 class="projectname">SSALConnect</h2>
-                <p class="projectexp">Open source companion app for Sakıp Sabancı Anadolu Lisesi located in Istanbul</p>
-                <a class="detailbutton" href="https://github.com/baranonen/SSALConnect">View on GitHub</a>
+                <h2 class="projectname">ECAM.css</h2>
+                <p class="projectexp">A CSS framework that replicates the look of the cockpit displays in Airbus planes</p>
+                <a class="detailbutton" href="https://github.com/baranonen/ecam.css">View on GitHub <i class="fa fa-angle-right" aria-hidden="true"></i></a> <br> <br>
+                <a class="detailbutton" href="https://baranonen.github.io/ECAM.css/">Visit website <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+            </div>
+
+            <div class="project">
+                <h2 class="projectname">Oleddit</h2>
+                <p class="projectexp">A very tiny Reddit client that runs on a 0.96 inch OLED screen with a Raspberry Pi</p>
+                <a class="detailbutton" href="https://github.com/baranonen/oleddit">View on GitHub <i class="fa fa-angle-right" aria-hidden="true"></i></a> <br> <br>
+                <a class="detailbutton" href="https://www.reddit.com/r/Python/comments/haq3vc/made_a_small_reddit_client_that_runs_on_a_096/?utm_source=share&utm_medium=web2x">More info <i class="fa fa-angle-right" aria-hidden="true"></i></a>
             </div>
 
             <div class="project">
                 <h2 class="projectname">baranonen.com</h2>
                 <p class="projectexp">My personal website</p>
-                <a class="detailbutton" href="https://github.com/baranonen/baranonen.com">View on GitHub</a>
+                <a class="detailbutton" href="https://github.com/baranonen/baranonen.com">View on GitHub <i class="fa fa-angle-right" aria-hidden="true"></i></a>
             </div>
+
+            <div class="project">
+                <h2 class="projectname">SSALConnect</h2>
+                <p class="projectexp">Open source companion app for Sakıp Sabancı Anadolu Lisesi located in Istanbul</p>
+                <a class="detailbutton" href="https://github.com/baranonen/SSALConnect">View on GitHub <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+            </div>
+
         </div>
     </div>
 
     <div class="projects">
         <h1 class="insideheader">Skills</h1>
 
-        <h1 class="scrollskills"><i class="fas fa-arrow-left"></i> Scroll left for more</h1>
+        <h1 class="scrollskills"><i class="fa fa-angle-left" aria-hidden="true"></i> Scroll left for more</h1>
 
         <div class="skillcards">
             <div class="skill">
                 <h1 class="skillname">HTML</h1>
-                <i style="color: #da5525; margin-left: 10px; margin-right: 10px;" class="fab fa-html5 fa-4x"
+                <i style="color: #da5525; margin-left: 10px; margin-right: 10px;" class="fa fa-html5 fa-4x"
                     aria-hidden="true"></i>
-            </div>
-
-            <div class="skill">
-                <h1 class="skillname">Git</h1>
-                <i style="margin-left: 10px; margin-right: 10px; color: var(--black-white-icon)"
-                    class="fab fa-github fa-4x" aria-hidden="true"></i>
             </div>
 
             <div class="skill">
@@ -141,13 +110,25 @@
                 <i style="color: #61dafb; margin-left: 10px; margin-right: 20px;" class="fab fa-react fa-4x"
                     aria-hidden="true"></i>
             </div>
+
+            <div class="skill">
+                <h1 class="skillname">Python</h1>
+                <i style="color: #447db3; margin-left: 10px; margin-right: 10px;" class="fab fa-python fa-4x"
+                    aria-hidden="true"></i>
+            </div>
+
+            <div class="skill">
+                <h1 class="skillname">Git</h1>
+                <i style="margin-left: 10px; margin-right: 10px; color: var(--black-white-icon)"
+                    class="fa fa-github fa-4x" aria-hidden="true"></i>
+            </div>
         </div>
     </div>
 
     <div class="projects">
         <h1 class="insideheader">Education</h1>
 
-        <h1 class="scrolleducation"><i class="fas fa-arrow-left"></i> Scroll left for more</h1>
+        <h1 class="scrolleducation"><i class="fa fa-angle-left" aria-hidden="true"></i> Scroll left for more</h1>
 
         <div class="schoolcards">
 
@@ -155,21 +136,21 @@
                 <h1 class="schoolname">Özel Evrim Okulları</h1>
                 <p class="schoolplight">Primary School-Secondary School</p>
                 <p class="schoolplight">2009-2017</p>
-                <a class="detailbutton" href="http://www.evrim.k12.tr/tr/">Visit website</a>
+                <a class="detailbutton" href="http://www.evrim.k12.tr/tr/">Visit website <i class="fa fa-angle-right" aria-hidden="true"></i></a>
             </div>
 
             <div class="school">
                 <h1 class="schoolname">Sevinç Koleji</h1>
                 <p class="schoolplight">Secondary School</p>
                 <p class="schoolplight">2017-2018</p>
-                <a class="detailbutton" href="https://www.sevinc.k12.tr/">Visit website</a>
+                <a class="detailbutton" href="https://www.sevinc.k12.tr/">Visit website <i class="fa fa-angle-right" aria-hidden="true"></i></a>
             </div>
 
             <div class="school">
                 <h1 class="schoolname">Sakıp Sabancı Anadolu Lisesi</h1>
                 <p class="schoolplight">High School</p>
                 <p class="schoolplight">2018-current</p>
-                <a class="detailbutton" href="http://sabancilisesi.meb.k12.tr/">Visit website</a>
+                <a class="detailbutton" href="http://sabancilisesi.meb.k12.tr/">Visit website <i class="fa fa-angle-right" aria-hidden="true"></i></a>
             </div>
 
         </div>
@@ -179,7 +160,7 @@
     <div class="projects">
         <h1 class="insideheader">Contact</h1>
 
-        <h1 class="scrollcontact"><i class="fas fa-arrow-left"></i> Scroll left for more</h1>
+        <h1 class="scrollcontact"><i class="fa fa-angle-left" aria-hidden="true"></i> Scroll left for more</h1>
 
         <div class="contactcards">
 
@@ -215,13 +196,7 @@
 <footer>
 
     <div id="footer" class="footer">
-        <p class="footertext">© Copyright Baran Önen 2020</p>
-        <a href="//www.dmca.com/Protection/Status.aspx?ID=12dec948-7f79-45f7-a59f-17818812f70a"
-            title="DMCA.com Protection Status" class="dmca-badge"> <img
-                src="https://images.dmca.com/Badges/dmca-badge-w150-5x1-02.png?ID=12dec948-7f79-45f7-a59f-17818812f70a"
-                alt="DMCA.com Protection Status" /></a>
-        <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js">
-        </script>
+        <p class="footertext">© Baran Önen 2020</p>
     </div>
 
 </footer>
