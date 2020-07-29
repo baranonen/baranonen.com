@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+body {
+    background:url(
+        data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAIElEQVQYV2NkQAJGtpv/M4KIc4d94TQjSAFMEMTGUAEAchcWJqxIGSoAAAAASUVORK5CYII=
+    ) repeat;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    font-family: 'VT323', monospace;
+    min-width: fill-available;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'VT323', monospace;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none; 
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.topbar {
+    min-height: 30px;
+    min-width: fill-available;
+    background-color: #dddddd;
+    border-bottom: black solid 3px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.topbarbtn {
+    font-size: 25px;
+    border: none;
+    outline: none;
+    background-color: #dddddd;
+    font-family: 'VT323', monospace;
+    margin: 0;
+    padding: 2px 5px 0px 5px;
+}
+
+.window {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 300px;
+    width: 400px;
+    min-width: 300px;
+    min-height: 300px;
+    background-color: #e9e9e9;
+    border: black solid 2px;
+    resize:both;
+    overflow: auto;
+    animation: .15s;
+}
+
+button {
+    cursor: pointer;
+}
+
+.windowheader {
+    border-bottom: black solid 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    cursor: move;
+    min-height: 30px;
+    background-color: #dddddd;
+}
+
+.icondiv {
+    margin: 20px;
+    height: 100px;
+    width: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.icon {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.icontext {
+    margin-top: 0;
+    font-size: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #ffffff85;
+    text-align: center;
+}
+
+.filesandfolders {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.hidden {
+    display: none;
+}
+
+.novisibility {
+    visibility: hidden;
+}
+
+#mainwindow {
+    height: 400px;
+    width: 500px;
+}
+
+.window iframe {
+    width: 100%;
+    height: 100%;
+} 

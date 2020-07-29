@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="clock.js"></script>
+    <script src="mainwindowdispclose.js"></script>
+    <title>Baran Önen</title>
+</head>
+<body onload="startTime()">
+    <div class="topbar">
+        <div>
+            <button class="topbarbtn">File</button>
+            <button class="topbarbtn">Edit</button>
+        </div>
+        <div>
+            <p id="clock" class="topbarbtn">Loading</p>
+        </div>
+    </div>
+    <div onclick="showmainwindow()" class="icondiv">
+        <img class="icon" src="media/foldericon.png" alt="folder named Baran Önen">
+        <p class="icontext">Baran Önen</p>
+    </div>
+    <div onclick="window.open('https://github.com/baranonen/baranonen.com' ,'_blank')" class="icondiv">
+        <img class="icon" src="media/fileicon.png" alt="folder named Baran Önen">
+        <p class="icontext">GitHub</p>
+    </div>
+    <div id="mainwindow" class="window">
+        <div id="mainwindowheader" class="windowheader">
+            <button onclick="closemainwindow()" class="topbarbtn">X</button>
+            <p class="topbarbtn">Baran Önen</p>
+            <button id="fullscreenbtn" onclick="fullscreen()" class="topbarbtn">+</button>
+            <script src="fullscreen.js"></script>
+            <script src="mainwindowdispclose.js"></script>
+        </div>
+        <div class="filesandfolders">
+            <div onclick="showaboutme()" class="icondiv">
+                <img class="icon" src="media/fileicon.png" alt="folder named Baran Önen">
+                <p class="icontext">About Me</p>
+            </div>
+            <div onclick="showprojects()" class="icondiv">
+                <img class="icon" src="media/fileicon.png" alt="folder named Baran Önen">
+                <p class="icontext">Projects</p>
+            </div>
+            <div onclick="showskills()" class="icondiv">
+                <img class="icon" src="media/fileicon.png" alt="folder named Baran Önen">
+                <p class="icontext">Skills</p>
+            </div>
+            <div onclick="showeducation()" class="icondiv">
+                <img class="icon" src="media/fileicon.png" alt="folder named Baran Önen">
+                <p class="icontext">Education</p>
+            </div>
+            <div onclick="showcontact()" class="icondiv">
+                <img class="icon" src="media/fileicon.png" alt="folder named Baran Önen">
+                <p class="icontext">Contact</p>
+            </div>
+        </div>
+        <script src="mainwindowdispclose.js"></script>
+        <script src="windowdrag.js"></script>
+    </div>
+    <div id="aboutme" class="window hidden">
+        <div id="aboutmeheader" class="windowheader">
+            <button onclick="closeaboutme()" class="topbarbtn">X</button>
+            <p class="topbarbtn">About Me</p>
+            <button id="fullscreenbtn" onclick="fullscreen()" class="topbarbtn novisibility">+</button>
+            <script src="fullscreen.js"></script>
+            <script src="mainwindowdispclose.js"></script>
+            <script src="windowdrag.js"></script>
+        </div>
+        <iframe src="partials/aboutme.html" frameborder="0"></iframe>
+    </div>
+    <div id="projects" class="window hidden">
+        <div id="projectsheader" class="windowheader">
+            <button onclick="closeprojects()" class="topbarbtn">X</button>
+            <p class="topbarbtn">Projects</p>
+            <button id="fullscreenbtn" onclick="fullscreen()" class="topbarbtn novisibility">+</button>
+            <script src="fullscreen.js"></script>
+            <script src="mainwindowdispclose.js"></script>
+            <script src="windowdrag.js"></script>
+        </div>
+        <iframe src="partials/projects.html" frameborder="0"></iframe>
+    </div>
+    <div id="skills" class="window hidden">
+        <div id="skillsheader" class="windowheader">
+            <button onclick="closeskills()" class="topbarbtn">X</button>
+            <p class="topbarbtn">Skills</p>
+            <button id="fullscreenbtn" onclick="fullscreen()" class="topbarbtn novisibility">+</button>
+            <script src="fullscreen.js"></script>
+            <script src="mainwindowdispclose.js"></script>
+            <script src="windowdrag.js"></script>
+        </div>
+        <iframe src="partials/skills.html" frameborder="0"></iframe>
+    </div>
+    <div id="education" class="window hidden">
+        <div id="educationheader" class="windowheader">
+            <button onclick="closeeducation()" class="topbarbtn">X</button>
+            <p class="topbarbtn">Education</p>
+            <button id="fullscreenbtn" onclick="fullscreen()" class="topbarbtn novisibility">+</button>
+            <script src="fullscreen.js"></script>
+            <script src="mainwindowdispclose.js"></script>
+            <script src="windowdrag.js"></script>
+        </div>
+        <iframe src="partials/education.html" frameborder="0"></iframe>
+    </div>
+    <div id="contact" class="window hidden">
+        <div id="contactheader" class="windowheader">
+            <button onclick="closecontact()" class="topbarbtn">X</button>
+            <p class="topbarbtn">Contact</p>
+            <button id="fullscreenbtn" onclick="fullscreen()" class="topbarbtn novisibility">+</button>
+            <script src="fullscreen.js"></script>
+            <script src="mainwindowdispclose.js"></script>
+            <script src="windowdrag.js"></script>
+        </div>
+        <iframe src="partials/contact.html" frameborder="0"></iframe>
+    </div>
+</body>
+</html>
