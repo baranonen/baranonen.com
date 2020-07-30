@@ -11,12 +11,16 @@
 <body onload="startTime()">
     <div class="topbar">
         <div>
-            <button class="topbarbtn">File</button>
+            <button onclick="shoefilemore()" class="topbarbtn">File</button>
             <button class="topbarbtn">Edit</button>
         </div>
         <div>
             <p id="clock" class="topbarbtn">Loading</p>
         </div>
+    </div>
+    <div id="filemore" class="more">
+        <button class="topbarbtn">About this website</button>
+        <button class="topbarbtn">Old version</button>
     </div>
     <div onclick="showmainwindow()" class="icondiv">
         <img class="icon" src="media/foldericon.png" alt="folder named Baran Önen">
