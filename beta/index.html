@@ -11,24 +11,28 @@
 <body onload="startTime()">
     <div class="topbar">
         <div>
-            <button onclick="shoefilemore()" class="topbarbtn">File</button>
+            <button class="topbarbtn">File</button>
             <button class="topbarbtn">Edit</button>
         </div>
         <div>
             <p id="clock" class="topbarbtn">Loading</p>
         </div>
     </div>
-    <div id="filemore" class="more">
+    <div class="more">
         <button class="topbarbtn">About this website</button>
         <button class="topbarbtn">Old version</button>
     </div>
-    <div onclick="showmainwindow()" class="icondiv">
+    <div onclick="showwindow(this, 'mainwindow')" class="icondiv">
         <img class="icon" src="media/foldericon.png" alt="folder named Baran Önen">
         <p class="icontext">Baran Önen</p>
     </div>
     <div onclick="window.open('https://github.com/baranonen/baranonen.com' ,'_blank')" class="icondiv">
-        <img class="icon" src="media/fileicon.png" alt="folder named Baran Önen">
+        <img class="icon" src="media/githubicon.png" alt="folder named Baran Önen">
         <p class="icontext">GitHub</p>
+    </div>
+    <div onclick="showwindow(this, 'readme')" class="icondiv">
+        <img class="icon" src="media/fileicon.png" alt="folder named Baran Önen">
+        <p class="icontext">README</p>
     </div>
     <div id="mainwindow" class="window">
         <div id="mainwindowheader" class="windowheader">
@@ -39,23 +43,23 @@
             <script src="mainwindowdispclose.js"></script>
         </div>
         <div class="filesandfolders">
-            <div onclick="showaboutme()" class="icondiv">
+            <div onclick="showwindow(this, 'aboutme')" class="icondiv">
                 <img class="icon" src="media/fileicon.png" alt="folder named Baran Önen">
                 <p class="icontext">About Me</p>
             </div>
-            <div onclick="showprojects()" class="icondiv">
+            <div onclick="showwindow(this, 'projects')" class="icondiv">
                 <img class="icon" src="media/fileicon.png" alt="folder named Baran Önen">
                 <p class="icontext">Projects</p>
             </div>
-            <div onclick="showskills()" class="icondiv">
+            <div onclick="showwindow(this, 'skills')" class="icondiv">
                 <img class="icon" src="media/fileicon.png" alt="folder named Baran Önen">
                 <p class="icontext">Skills</p>
             </div>
-            <div onclick="showeducation()" class="icondiv">
+            <div onclick="showwindow(this, 'education')" class="icondiv">
                 <img class="icon" src="media/fileicon.png" alt="folder named Baran Önen">
                 <p class="icontext">Education</p>
             </div>
-            <div onclick="showcontact()" class="icondiv">
+            <div onclick="showwindow(this, 'contact')" class="icondiv">
                 <img class="icon" src="media/fileicon.png" alt="folder named Baran Önen">
                 <p class="icontext">Contact</p>
             </div>
@@ -117,6 +121,17 @@
             <script src="windowdrag.js"></script>
         </div>
         <iframe src="partials/contact.html" frameborder="0"></iframe>
+    </div>
+    <div id="readme" class="window hidden">
+        <div id="readmeheader" class="windowheader">
+            <button onclick="closereadme()" class="topbarbtn">X</button>
+            <p class="topbarbtn">README</p>
+            <button id="fullscreenbtn" onclick="fullscreen()" class="topbarbtn novisibility">+</button>
+            <script src="fullscreen.js"></script>
+            <script src="mainwindowdispclose.js"></script>
+            <script src="windowdrag.js"></script>
+        </div>
+        <iframe src="partials/readme.html" frameborder="0"></iframe>
     </div>
 </body>
 </html>

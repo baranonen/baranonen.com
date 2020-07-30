@@ -11,6 +11,8 @@ dragElement(document.getElementById("education"));
 
 dragElement(document.getElementById("contact"));
 
+dragElement(document.getElementById("readme"));
+
 function dragElement(elmnt) {
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
   if (document.getElementById(elmnt.id + "header")) {
@@ -22,7 +24,7 @@ function dragElement(elmnt) {
   }
 
   function dragMouseDown(e) {
-    document.getElementById(elmnt.id).style.zIndex = document.getElementById(elmnt.id).style.zIndex + 1
+    document.getElementById(elmnt.id).style.zIndex = ++document.getElementById(elmnt.id).style.zIndex
     e = e || window.event;
     e.preventDefault();
     // get the mouse cursor position at startup:

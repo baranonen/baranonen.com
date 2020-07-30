@@ -12,9 +12,7 @@ body {
     min-width: fill-available;
 }
 
-html {
-    margin: 0;
-    padding: 0;
+* {
     font-family: 'VT323', monospace;
     -webkit-touch-callout: none;
     -webkit-user-select: none; 
@@ -25,6 +23,12 @@ html {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'VT323', monospace;
 }
 
 .topbar {
@@ -65,10 +69,6 @@ html {
     overflow: hidden;
 }
 
-button {
-    cursor: pointer;
-}
-
 .windowheader {
     border-bottom: black solid 1px;
     display: flex;
@@ -87,24 +87,33 @@ iframe {
 
 .icondiv {
     margin: 20px;
-    height: 100px;
+    height: 80px;
     width: 90px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
+.focusedicondiv .icontext {
+    background-color: #47474785;
+}
+
+.focusedicondiv {
+    border: #3b3b3b dashed 1px;
+}
+
 .icon {
     width: 100%;
     height: 100%;
     object-fit: contain;
+    image-rendering: pixelated;
+    display: flex;
+    justify-content: center;
 }
 
 .icontext {
-    margin-top: 0;
+    margin: 0;
     font-size: 20px;
-    padding-left: 5px;
-    padding-right: 5px;
     background-color: #ffffff85;
     text-align: center;
 }

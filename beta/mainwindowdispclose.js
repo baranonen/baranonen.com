@@ -3,6 +3,16 @@ function closemainwindow() {
     currentwindow.style.display = "none"
 }
 
+function showwindow(elmnt, window) {
+    if (elmnt.classList.contains("focusedicondiv")) {
+        var currentwindow = document.getElementById(window);
+        currentwindow.style.display = "block";
+        elmnt.classList.remove("focusedicondiv")
+    } else {
+        elmnt.classList.add("focusedicondiv")
+    }
+}
+
 function showmainwindow() {
     var currentwindow = document.getElementById("mainwindow");
     currentwindow.style.display = "block"
@@ -66,4 +76,9 @@ function closefilemore() {
 function showfilemore() {
     var currentwindow = document.getElementById("filemore");
     currentwindow.style.display = "flex"
+} 
+
+function closereadme() {
+    var currentwindow = document.getElementById("readme");
+    currentwindow.style.display = "none"
 } 
