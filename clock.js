@@ -1,3 +1,8 @@
+var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+if (isMobile) {
+  window.open('/m')
+}
+
 function startTime() {
     var today = new Date();
     var h = today.getHours();
