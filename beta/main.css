@@ -25,6 +25,40 @@ body {
     box-sizing: border-box;
 }
 
+.more {
+    display: none;
+    flex-direction: column;
+    background-color: #dddddd;
+    min-width: 50px;
+    min-height: 50px;
+    width: 230px;
+    border: black solid 3px;
+    border-top: none;
+}
+
+.filemore {
+    position: absolute;
+    left: 20px;
+    top: 30px;
+}
+
+.more .hoverable {
+    width: 100%;
+    text-align: left;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.more .hoverable:hover {
+    background-color: #47474785;
+}
+
+.editmore {
+    position: absolute;
+    left: 75px;
+    top: 30px;
+}
+
 html {
     margin: 0;
     padding: 0;
@@ -143,12 +177,4 @@ iframe {
 .window iframe {
     width: 100%;
     height: calc(100% - 31px);
-}
-
-.more {
-    display: flex;
-    flex-direction: column;
-    background-color: #a00909;
-    min-width: 50px;
-    min-height: 50px;
 }

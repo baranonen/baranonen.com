@@ -6,21 +6,26 @@
     <link rel="stylesheet" href="main.css">
     <script src="clock.js"></script>
     <script src="mainwindowdispclose.js"></script>
+    <script src="topbardispclose.js"></script>
     <title>Baran Önen</title>
 </head>
 <body onload="startTime()">
     <div class="topbar">
         <div>
-            <button class="topbarbtn">File</button>
-            <button class="topbarbtn">Edit</button>
+            <button id="filebtn" onclick="showfilemore()" class="topbarbtn">File</button>
+            <button id="editbtn" onclick="showeditmore()" class="topbarbtn">Edit</button>
         </div>
         <div>
             <p id="clock" class="topbarbtn">Loading</p>
         </div>
     </div>
-    <div class="more">
-        <button class="topbarbtn">About this website</button>
-        <button class="topbarbtn">Old version</button>
+    <div id="filemore" class="more filemore" style="display: none;">
+        <button class="topbarbtn hoverable">About this website</button>
+        <button class="topbarbtn hoverable">Old version</button>
+    </div>
+    <div id="editmore" class="more editmore" style="display: none;">
+        <button class="topbarbtn hoverable">View on GitHub</button>
+        <button class="topbarbtn hoverable">Fork</button>
     </div>
     <div onclick="showwindow(this, 'mainwindow')" class="icondiv">
         <img class="icon" src="media/foldericon.png" alt="folder named Baran Önen">
