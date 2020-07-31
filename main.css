@@ -32,7 +32,7 @@ body {
     min-width: 50px;
     min-height: 50px;
     width: 230px;
-    border: black solid 3px;
+    border: black solid 2px;
     border-top: none;
 }
 
@@ -69,7 +69,7 @@ html {
     min-height: 30px;
     min-width: fill-available;
     background-color: #dddddd;
-    border-bottom: black solid 3px;
+    border-bottom: black solid 2px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -79,6 +79,7 @@ html {
 
 .topbarbtn {
     font-size: 25px;
+    border-radius: 0px;
     border: none;
     outline: none;
     background-color: #dddddd;
