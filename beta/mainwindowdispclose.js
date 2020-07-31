@@ -72,3 +72,18 @@ function closefilemore() {
     var currentwindow = document.getElementById("filemore");
     currentwindow.style.display = "none"
 }
+
+function closereadme() {
+    var currentwindow = document.getElementById("readme");
+    currentwindow.style.display = "none"
+}
+
+function closeaboutwebsite() {
+    var currentwindow = document.getElementById("aboutwebsite");
+    currentwindow.style.display = "none"
+}
+
+function showaboutwebsite() {
+    var currentwindow = document.getElementById("aboutwebsite");
+    currentwindow.style.display = "block"
+}

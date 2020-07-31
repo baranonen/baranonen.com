@@ -13,6 +13,8 @@ dragElement(document.getElementById("contact"));
 
 dragElement(document.getElementById("readme"));
 
+dragElement(document.getElementById("aboutwebsite"));
+
 function dragElement(elmnt) {
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
   if (document.getElementById(elmnt.id + "header")) {

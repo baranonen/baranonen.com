@@ -45,8 +45,8 @@ body {
 .more .hoverable {
     width: 100%;
     text-align: left;
-    margin-top: 4px;
-    margin-bottom: 4px;
+    margin-top: 2px;
+    margin-bottom: 2px;
 }
 
 .more .hoverable:hover {
@@ -108,7 +108,6 @@ html {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    cursor: move;
     min-height: 30px;
     background-color: #dddddd;
     margin-bottom: 0px;

@@ -19,10 +19,10 @@ function normaldisp() {
     var fullscreenbtn = document.getElementById("fullscreenbtn");
 
     currentwindow.style.transition = ".15s"
-    currentwindow.style.top = "50%"
-    currentwindow.style.left = "50%"
-    currentwindow.style.width = "400px";
-    currentwindow.style.height = "300px";
+    currentwindow.style.top = "calc(50% - 250px)"
+    currentwindow.style.left = "calc(50% - 315px)"
+    currentwindow.style.width = "500px";
+    currentwindow.style.height = "400px";
     fullscreenbtn.innerHTML = "+";
     fullscreenbtn.onclick = fullscreen;
     setTimeout(function() {
