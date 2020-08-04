@@ -9,6 +9,6 @@ function mobilecheck() {
         
         location.href = 'm/';
     } else {
-      location.href = 'desktop.html';
+      location.href = 'd/';
     }
 } 

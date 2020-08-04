@@ -86,6 +86,8 @@ html {
     font-family: 'VT323', monospace;
     margin: 0;
     padding: 2px 5px 0px 5px;
+    text-decoration: none;
+    color: black;
 }
 
 .window {
