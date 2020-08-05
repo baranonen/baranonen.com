@@ -7,7 +7,9 @@ function showwindow(elmnt, window) {
     if (elmnt.classList.contains("focusedicondiv")) {
         var currentwindow = document.getElementById(window);
         currentwindow.style.display = "block";
-        elmnt.classList.remove("focusedicondiv")
+        highestz = highestz + 1;
+        currentwindow.style.zIndex = highestz;
+        elmnt.classList.remove("focusedicondiv");
     } else {
         elmnt.classList.add("focusedicondiv")
     }

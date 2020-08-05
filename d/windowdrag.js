@@ -1,3 +1,5 @@
+var highestz = 1;
+
 // Make the DIV element draggable:
 dragElement(document.getElementById("mainwindow"));
 
@@ -26,7 +28,8 @@ function dragElement(elmnt) {
   }
 
   function dragMouseDown(e) {
-    document.getElementById(elmnt.id).style.zIndex = ++document.getElementById(elmnt.id).style.zIndex
+    highestz = highestz + 1;
+    document.getElementById(elmnt.id).style.zIndex = highestz;
     e = e || window.event;
     e.preventDefault();
     // get the mouse cursor position at startup:
