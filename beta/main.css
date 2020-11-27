@@ -1,0 +1,48 @@
+body {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+}
+header img {
+    width: 100%;
+    display: block;
+}
+
+.contentdiv {
+    width: 100%;
+    min-height: 300px;
+    height: calc(100vh - 100vw * 0.17152 - 30px);
+    margin-top: 0;
+    background-image: linear-gradient(180deg, rgba(34,34,34,1) 0%, rgba(13,13,13,1) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+}
+
+p {
+    color: white;
+    font-size: 2vw;
+    font-family: "Lucida Grande", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.icons {
+    margin-top: 40px;
+}
+
+.icons a {
+    color: white;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+}
+
+.icons a i {
+    font-size: 1.7vw;
+}
