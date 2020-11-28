@@ -10,25 +10,37 @@ body {
 header {
     width: 100%;
 }
-header img {
+
+.headernormal {
     width: 100%;
     display: block;
 }
 
+.headerimg {
+    min-width: 100vw;
+    height: 40vh;
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-image: url("header.svg");
+    margin-bottom: 0;
+}
+
 .contentdiv {
-    width: 100%;
-    min-height: 300px;
-    height: calc(100vh - 100vw * 0.17152 - 30px);
     margin-top: 0;
+    width: 100%;
+    height: 60vh;
     background-image: linear-gradient(180deg, rgba(34,34,34,1) 0%, rgba(13,13,13,1) 100%);
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 30px;
+    justify-content: center;
 }
 
 p {
     color: white;
+    margin-top: -20px;
     font-size: 2vw;
     font-family: "Lucida Grande", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -45,4 +57,36 @@ p {
 
 .icons a i {
     font-size: 1.7vw;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .headerimg {
+        height: 40vh;
+    }
+    
+}
+
+@media screen and (max-width: 900px) {
+
+    .headerimg {
+        background-image: url("headerbig.svg");
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+
+    .headerimg {
+        background-image: url("headerbiggest.svg");
+    }
+    
+}
+
+@media screen and (max-width: 400px) {
+
+    .headerimg {
+        height: 30vh;
+    }
+    
 }
