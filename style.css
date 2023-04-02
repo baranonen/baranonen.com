@@ -22,17 +22,16 @@ div {
     align-items: flex-start;
 }
 
+html {
+    background-color: var(--background-color);
+}
+
 body {
     background-color: var(--background-color);
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 50px 0 0 0;
+    padding: 50px 0 50px 0;
 }
 
 a {
