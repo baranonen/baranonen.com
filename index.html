@@ -7,6 +7,11 @@
 <meta name="description" content="A computer science student at TU Darmstadt with interest in software development, engineering, railways and aviation">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 <link rel="stylesheet" href="style.css">
+<link rel="preload" href="frame2.svg" as="image">
+<link rel="preload" href="frame3.svg" as="image">
+<link rel="preload" href="frame4.svg" as="image">
+<link rel="preload" href="frame5.svg" as="image">
+<link rel="preload" href="frame6.svg" as="image">
 </head>
 <body>
     <div class="container">
@@ -20,5 +25,36 @@
             <a href="https://www.linkedin.com/in/baranonen/" class="button"><i class="fab fa-linkedin"></i>LinkedIn</a>
         </div>
     </div>
+    <script>
+        const backgrounds = ['frame1.svg', 'frame2.svg', 'frame3.svg', 'frame4.svg', 'frame5.svg', 'frame6.svg'];
+
+        function preloadImages(urls) {
+            return Promise.all(urls.map(url => {
+                return new Promise((resolve, reject) => {
+                    const img = new Image();
+                    img.src = url;
+                    img.onload = resolve;
+                    img.onerror = reject;
+                });
+            }));
+        }
+
+        function changeBackground() {
+            let index = 0;
+            setInterval(() => {
+                if (index === backgrounds.length) {
+                    clearInterval(intervalId);
+                }
+                document.getElementsByClassName("container")[0].style.backgroundImage = `url('${backgrounds[index]}')`;
+                index++;
+            }, 3000);
+        }
+
+        preloadImages(backgrounds).then(() => {
+            changeBackground();
+        }).catch(error => {
+            console.error('Error preloading images:', error);
+        });
+    </script>
 </body>
 </html>
