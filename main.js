@@ -1,5 +1,5 @@
 const backgrounds = [
-    'frame2.svg', 'frame3.svg', 'frame4.svg', 'frame5.svg', 'frame6.svg', 'frame7.svg', 'frame8.svg', 'frame9.svg', 'frame10.svg', 'frame11.svg', 'frame12.svg', 'frame13.svg', 'frame14.svg', 'frame15.svg', 'frame16.svg', 'frame17.svg'
+    'frames/frame2.svg', 'frames/frame3.svg', 'frames/frame4.svg', 'frames/frame5.svg', 'frames/frame6.svg', 'frames/frame7.svg', 'frames/frame8.svg', 'frames/frame9.svg', 'frames/frame10.svg', 'frames/frame11.svg', 'frames/frame12.svg', 'frames/frame13.svg', 'frames/frame14.svg', 'frames/frame15.svg', 'frames/frame16.svg', 'frames/frame17.svg'
 ];
 
 function preloadImages(urls) {

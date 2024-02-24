@@ -13,7 +13,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    background-image: url('frame1.svg');
+    background-image: url('frames/frame1.svg');
     background-color: black;
     background-position: center;
     background-repeat: no-repeat;
@@ -58,13 +58,18 @@ body {
     color: white;
     padding: 10px 20px;
     border-radius: 25px;
-    margin: 10px 10px;
+    margin: 7px;
     text-decoration: none;
-    font-size: 1em;
+    font-size: 1.3em;
+    height: 25px;
 }
 
 .button i {
-    margin-right: 5px;
+    margin-right: 10px;
+}
+
+.nomarginright {
+    margin-right: 0!important;
 }
 
 @media only screen and (max-width: 600px) {
@@ -72,11 +77,11 @@ body {
         font-size: 2em;
     }
     .text {
-        font-size: 0.85em;
+        font-size: .9em;
     }
     .button {
-        font-size: 0.85em;
-        margin: 7px 7px;
-        padding: 7px 14px;
+        font-size: 1.2em;
+        margin: 6px;
+        height: 22px;
     }
 }
